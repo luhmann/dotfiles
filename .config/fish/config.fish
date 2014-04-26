@@ -1,24 +1,11 @@
 #Aliases
-alias ddev 'cd ~/Dev'
-alias dmn 'cd ~/Dev/myvideo/myvideo-nextlevel'
-alias dms 'cd ~/Dev/myvideo/myvideo-styles'
+function ...
+  cd ../..
+end
 
-alias ip 'dig +short myip.opendns.com @resolver1.opendns.com'
-alias network_ip 'ifconfig | grep 'inet'
-
-alias v 'vim'
-
-alias vu 'vagrant up'
-alias vh 'vagrant halt'
-alias vssh 'vagrant ssh'
-
-alias o 'open'
-alias oo 'open .'
-
-alias ..    'cd ..'
-alias ...   'cd ../..'
-alias ....  'cd ../../..'
-alias ..... 'cd ../../../..'
+function ....
+  cd ../../..
+end
 
 function psg -d "Grep for a running process, returning its PID and full string"
     ps auxww | grep --color=always $argv | grep -v grep | collapse | cuts -f 2,11-
