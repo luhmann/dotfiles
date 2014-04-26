@@ -36,6 +36,7 @@ brew install brew-cask
 brew cask install google-chrome
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install slate
 
 # Remove outdated versions from the cellar
 brew cleanup
