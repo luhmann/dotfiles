@@ -1,16 +1,39 @@
+#Aliases
+alias v 'vim'
+
+alias vu 'vagrant up'
+alias vh 'vagrant halt'
+
+alias o 'open'
+alias oo 'open .'
+
+alias ..    'cd ..'
+alias ...   'cd ../..'
+alias ....  'cd ../../..'
+alias ..... 'cd ../../../..'
+
+function psg -d "Grep for a running process, returning its PID and full string"
+    ps auxww | grep --color=always $argv | grep -v grep | collapse | cuts -f 2,11-
+end
+
+set -g -x EDITOR vim
+
 # Homebrew
-set -x PATH ""(brew --prefix)"/bin" $PATH
+set --export PATH /usr/local/bin /usr/local/sbin $PATH
 
-# use latest Ruby + Gems
-set -x PATH "/usr/local/Cellar/ruby/2.0.0-p0/bin" "/usr/local/opt/ruby/bin" $PATH
+ # Npm binaries
+ set --export PATH /usr/local/share/npm/bin $PATH
 
-# node (default)
-set -x NODE_PATH "/usr/local/lib/node" "/usr/local/lib/node_modules" $NODE_PATH
+# Node
+set --export NODE_PATH /usr/local/lib/node_modules
 
-# set paths for nvm
-set NVM_NODEVER v0.10.23
-set -x PATH ~/.nvm/$NVM_NODEVER/bin $PATH
-set -x MANPATH ~/.nvm/$NVM_NODEVER/share/man $MANPATH
+ # Color grep output
+ set --export GREP_OPTIONS --color=auto
+
+# Rbenv
+set --export PATH $HOME/.rbenv/bin $PATH
+set --export PATH $HOME/.rbenv/shims $PATH
+rbenv rehash >/dev/null ^&1
 
 # expose PATH to graphical apps
 launchctl setenv PATH $PATH

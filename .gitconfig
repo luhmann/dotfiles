@@ -5,8 +5,6 @@
 	co = checkout
 	# checkout usual branches
 	master = checkout master
-	staging = checkout staging
-	production = checkout production
 	# checkout branch, creating it if necessary
 	go = checkout -B
 	# commit
@@ -96,5 +94,5 @@
 # personal details
 
 [user]
-	email = simon@attentif.ch
-	name = Simon Goumaz
+	email = jfd@daenen4.de
+	name = Jan Florian Dietrich
