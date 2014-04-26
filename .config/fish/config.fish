@@ -1,8 +1,16 @@
 #Aliases
+alias ddev 'cd ~/Dev'
+alias dmn 'cd ~/Dev/myvideo/myvideo-nextlevel'
+alias dms 'cd ~/Dev/myvideo/myvideo-styles'
+
+alias ip 'dig +short myip.opendns.com @resolver1.opendns.com'
+alias network_ip 'ifconfig | grep 'inet'
+
 alias v 'vim'
 
 alias vu 'vagrant up'
 alias vh 'vagrant halt'
+alias vssh 'vagrant ssh'
 
 alias o 'open'
 alias oo 'open .'

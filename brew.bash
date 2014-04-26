@@ -10,22 +10,32 @@ brew upgrade
 brew install coreutils
 echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 
-# Install more recent versions of some OS X tools
+#Add some taps
 brew tap homebrew/dupes
-brew install homebrew/dupes/grep
 brew tap josegonzalez/homebrew-php
+brew tap phinze/cask
+
+# Install more recent versions of some OS X tools
+brew install homebrew/dupes/grep
 brew install php54
-brew install ruby
 
 # Install everything else
 brew install ag
-brew install ack
 brew install git
 brew install ffmpeg
 brew install graphicsmagick
 brew install htop
-brew install mobile-shell
-brew install mysql
+brew install mariadb
+brew install wget
+brew install rbenv
+brew install ssh-copy-id
+brew install python
+brew install brew-cask
+
+# Install Casks
+brew cask install google-chrome
+brew cask install vagrant
+brew cask install virtualbox
 
 # Remove outdated versions from the cellar
 brew cleanup
