@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# check prerequisites
 
+# check prerequisites
 which brew &> /dev/null
 if [[ $? -ne 0 ]]; then
   printf "\nError: Homebrew not installed\n\n"
+  cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
   exit 1
 fi
 
@@ -21,7 +22,7 @@ fi
 
 printf "# Syncing to home folder...\n"
 function doSync() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "init" --exclude "*.bash" --exclude "apply-settings.fish" --exclude "*.md" --exclude "*.txt" -av . ~
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "init" --exclude "*.bash" --exclude "apply-settings.fish" --exclude "python.bash" --exclude "*.md" --exclude "*.txt" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doSync
