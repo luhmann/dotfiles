@@ -31,6 +31,8 @@ brew install wget
 brew install rbenv
 brew install ssh-copy-id
 brew install python
+brew install iftop
+brew install sitespeed.io
 brew install brew-cask
 
 # Install Casks
