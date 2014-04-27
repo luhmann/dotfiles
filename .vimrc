@@ -1,5 +1,3 @@
-execute pathogen#infect()
-map <C-n> :NERDTreeToggle<CR>
 
 set ai                  " auto indenting
 set history=100         " keep 100 lines of history
@@ -20,6 +18,7 @@ set exrc
 set secure
 " Enable line numbers
 set number
+:highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 " Enable syntax highlighting
 syntax on
 " Make tabs as wide as two spaces
@@ -46,18 +45,10 @@ set showmode
 " Show the filename in the window titlebar
 set title
 
-" JSON folding
-augroup json_autocmd
-  autocmd!
-  autocmd FileType json set autoindent
-  autocmd FileType json set formatoptions=tcq2l
-  autocmd FileType json set textwidth=78 shiftwidth=2
-  autocmd FileType json set softtabstop=2 tabstop=8
-  autocmd FileType json set expandtab
-  autocmd FileType json set foldmethod=syntax
-augroup END
-
 "NeoBundle Scripts-----------------------------
+if &shell =~# 'fish$'
+    set shell=sh
+endif
 if has('vim_starting')
   set nocompatible               " Be iMproved
 
@@ -73,10 +64,10 @@ call neobundle#begin(expand('/Users/floriandietrich/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
-NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
-
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'scrooloose/nerdtree'
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 
 " Required:
@@ -89,3 +80,5 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
+
+map <C-n> :NERDTreeToggle<CR>
