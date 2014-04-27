@@ -80,4 +80,4 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
-command NT NERDTreeToggle
+command! NT NERDTreeToggle
