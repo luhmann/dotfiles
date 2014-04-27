@@ -41,6 +41,7 @@ brew install ngrep
 brew install findutils
 
 # Install Casks
+brew tap caskroom/versions
 brew cask install google-chrome
 brew cask install vagrant
 brew cask install virtualbox
