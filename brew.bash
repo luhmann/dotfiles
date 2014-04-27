@@ -41,3 +41,5 @@ brew cask install slate
 
 # Remove outdated versions from the cellar
 brew cleanup
+
+exit 0

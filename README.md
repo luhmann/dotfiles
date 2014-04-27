@@ -1,16 +1,14 @@
-# jfds Dotfiles
-
-OSX, Homebrew, fish, git, Slate.
-
+# luhmanns Dotfiles
 
 ## Features
 
 - Bootstrap script (`bootstrap.bash`) that syncs dotfiles to home dir, installs latest fish with Homebrew if missing and applies fish settings (universal vars)
 - [Slate](https://github.com/jigish/slate) settings (minimal for now)
 - Homebrew formulae (`brew.bash`)
+- Homebrew install (`nonbrew.bash`)
+- Nom Packages
+- Python Packages
 - OSX settings (`osx.bash`)
-
-The latter two borrow heavily from @mathiasbynens's [dotfiles](https://github.com/mathiasbynens/dotfiles).
 
 
 ## Installation
