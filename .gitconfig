@@ -1,3 +1,12 @@
+# personal details
+
+[user]
+	email = jfd@daenen4.de
+	name = Jan Florian Dietrich
+
+[credential]
+	helper = osxkeychain
+
 [alias]
 	# add
 	a = add
@@ -36,9 +45,20 @@
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 
+	count   = !git shortlog -sn
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+
 [apply]
 	# detect whitespace errors when applying a patch
 	whitespace = fix
+	editor = vim
 
 [core]
 	excludesfile = ~/.gitignore
@@ -76,23 +96,3 @@
 
 [push]
 	default = simple
-
-# URL shorthands
-[url "git@github.com:"]
-	insteadOf = "gh:"
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
-[url "git://github.com/"]
-	insteadOf = "github:"
-[url "git@gist.github.com:"]
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
-[url "git://gist.github.com/"]
-	insteadOf = "gist:"
-
-# personal details
-
-[user]
-	email = jfd@daenen4.de
-	name = Jan Florian Dietrich

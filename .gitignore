@@ -9,3 +9,13 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+.svn
+*~
+*.swp
+*.rbc
+node_modules/
+.sass-cache/
+.coffee-cache/
+.idea/
+*.iml

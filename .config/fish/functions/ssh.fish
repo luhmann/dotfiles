@@ -1,3 +1,3 @@
 function ssh
-  ~/scripts/cssh.sh $argv
+  ~/.scripts/cssh.sh $argv
 end

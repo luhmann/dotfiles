@@ -22,6 +22,7 @@ brew install php54
 # Install everything else
 brew install ag
 brew install git
+brew install legit
 brew install ffmpeg
 brew install graphicsmagick
 brew install htop
