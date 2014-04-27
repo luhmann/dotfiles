@@ -35,6 +35,7 @@ brew install iftop
 brew install sitespeed.io
 brew install brew-cask
 brew install vim
+brew install ngrep
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
