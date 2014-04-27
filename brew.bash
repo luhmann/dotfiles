@@ -34,6 +34,7 @@ brew install python
 brew install iftop
 brew install sitespeed.io
 brew install brew-cask
+brew install vim
 
 # Install Casks
 brew cask install google-chrome
