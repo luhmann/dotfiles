@@ -10,7 +10,6 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.json setfiletype json
 endif
 
-
 set background=dark
 
 " Enable per-directory .vimrc files and disable unsafe commands in them
