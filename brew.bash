@@ -36,6 +36,9 @@ brew install sitespeed.io
 brew install brew-cask
 brew install vim
 
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install findutils
+
 # Install Casks
 brew cask install google-chrome
 brew cask install vagrant
