@@ -10,6 +10,9 @@ brew upgrade
 brew install coreutils
 echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install findutils
+
 #Add some taps
 brew tap homebrew/dupes
 brew tap josegonzalez/homebrew-php
@@ -33,12 +36,9 @@ brew install ssh-copy-id
 brew install python
 brew install iftop
 brew install sitespeed.io
-brew install brew-cask
 brew install vim
 brew install ngrep
-
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
+brew install brew-cask
 
 # Install Casks
 brew tap caskroom/versions
