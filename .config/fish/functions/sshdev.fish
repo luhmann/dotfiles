@@ -1,3 +1,3 @@
 function sshdev
-  ssh vagrant@devbox
+  ssh vagrant@mydevbox
 end

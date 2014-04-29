@@ -19,3 +19,5 @@ node_modules/
 .coffee-cache/
 .idea/
 *.iml
+
+npm-debug.log

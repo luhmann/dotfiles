@@ -30,5 +30,8 @@ set --export PATH $HOME/.rbenv/bin $PATH
 set --export PATH $HOME/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
 
+#Vagrant
+set --export VAGRANT_DEFAULT_PROVIDER parallels
+
 # expose PATH to graphical apps
 launchctl setenv PATH $PATH
