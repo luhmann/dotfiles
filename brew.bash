@@ -42,10 +42,22 @@ brew install brew-cask
 
 # Install Casks
 brew tap caskroom/versions
+brew cask install alfred
+brew cask install dropbox
 brew cask install google-chrome
+brew cask install google-chrome-canary
+brew cask install iterm2
+brew cask install firefox
+brew cask install spotify
+brew cask install skype
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install slate
+brew cask install cd-to
+brew cask install xee
+brew cask install totalfinder
+brew cask install transmission
+
 
 # Remove outdated versions from the cellar
 brew cleanup
