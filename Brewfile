@@ -18,6 +18,7 @@ install php54
 install ag
 install brew-cask
 install ffmpeg
+install fish
 install git
 install graphicsmagick
 install iftop
