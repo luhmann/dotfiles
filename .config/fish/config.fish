@@ -33,5 +33,8 @@ rbenv rehash >/dev/null ^&1
 #Vagrant
 set --export VAGRANT_DEFAULT_PROVIDER parallels
 
+# Homebrew Casks
+set --export HOMEBREW_CASK_OPTS --appdir=/Applications
+
 # expose PATH to graphical apps
 launchctl setenv PATH $PATH

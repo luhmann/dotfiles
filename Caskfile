@@ -3,6 +3,7 @@ tap caskroom/versions
 cask install adobe-creative-cloud
 cask install airmail
 cask install alfred
+cask alfred link
 cask install appdelete
 cask install cd-to
 cask install charles
@@ -19,10 +20,13 @@ cask install handbrake
 cask install knox
 cask install istat-menus
 cask install iterm2
+cask install kaleidoscope
 cask install makemkv
 cask install mplayerx
+cask install navicat-for-postgresql
 cask install onepassword
 cask install onyx
+cask install opera
 cask install parallels
 cask install phpstorm
 cask install pycharm
