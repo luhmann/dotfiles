@@ -26,7 +26,7 @@ install htop
 install mariadb
 install ngrep
 install rbenv
-install sitespeedio/sitespeedio/sitespeed.io
+# install sitespeedio/sitespeedio/sitespeed.io
 install ssh-copy-id
 install python
 install vim
