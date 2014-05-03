@@ -25,7 +25,6 @@ cask install kaleidoscope
 cask install makemkv
 cask install mplayerx
 cask install navicat-for-postgresql
-cask install onepassword
 cask install onyx
 cask install opera
 cask install parallels
