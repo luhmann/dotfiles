@@ -17,6 +17,7 @@ install php54
 # Install everything else
 install ag
 install brew-cask
+install bash
 install ffmpeg
 install fish
 install git
