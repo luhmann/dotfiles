@@ -2,6 +2,7 @@
 tap homebrew/dupes
 tap josegonzalez/homebrew-php
 tap phinze/cask
+tap tobli/browsertime
 
 # Install GNU core utilities (those that come with OS X are outdated)
 install coreutils
@@ -25,7 +26,7 @@ install htop
 install mariadb
 install ngrep
 install rbenv
-install sitespeed.io
+install sitespeedio/sitespeedio/sitespeed.io
 install ssh-copy-id
 install python
 install vim
