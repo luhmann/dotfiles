@@ -14,7 +14,7 @@ cask install dropbox
 cask install evernote
 cask install firefox
 cask install fontprep
-cask install ghostlab
+# cask install ghostlab
 cask install google-chrome
 cask install google-chrome-canary
 cask install handbrake
@@ -22,7 +22,7 @@ cask install knox
 cask install istat-menus
 cask install iterm2
 cask install kaleidoscope
-cask install makemkv
+# cask install makemkv
 cask install mplayerx
 cask install navicat-for-postgresql
 cask install onyx
@@ -47,4 +47,3 @@ cask install vlc
 cask install vmware-fusion
 cask install webstorm
 cask install xee
-cask install xscope
