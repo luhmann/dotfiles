@@ -4,6 +4,9 @@ tap josegonzalez/homebrew-php
 tap phinze/cask
 tap tobli/browsertime
 
+update
+upgrade
+
 # Install GNU core utilities (those that come with OS X are outdated)
 install coreutils
 
@@ -29,8 +32,11 @@ install mariadb
 install ngrep
 install node
 install rbenv
+install ruby-build
 # install sitespeedio/sitespeedio/sitespeed.io
 install ssh-copy-id
 install python
 install vim
 install wget
+
+brew cleanup

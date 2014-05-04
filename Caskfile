@@ -1,5 +1,9 @@
 # Install Casks
 tap caskroom/versions
+
+update
+upgrade
+
 cask install adobe-creative-cloud
 cask install airmail
 cask install alfred
@@ -47,3 +51,5 @@ cask install vlc
 cask install vmware-fusion
 cask install webstorm
 cask install xee
+
+cleanup
