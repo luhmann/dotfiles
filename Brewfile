@@ -27,6 +27,7 @@ install legit
 install htop
 install mariadb
 install ngrep
+install node
 install rbenv
 # install sitespeedio/sitespeedio/sitespeed.io
 install ssh-copy-id
