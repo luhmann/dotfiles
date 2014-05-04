@@ -9,3 +9,4 @@ rbenv global
 gem update --system
 
 gem install compass
+gem install compass-rgbapng
