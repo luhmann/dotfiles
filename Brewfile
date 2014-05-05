@@ -2,7 +2,9 @@
 tap homebrew/dupes
 tap josegonzalez/homebrew-php
 tap phinze/cask
-tap tobli/browsertime
+
+# Tap for sitespeed.io
+# tap tobli/browsertime
 
 update
 upgrade
@@ -15,7 +17,13 @@ install findutils
 
 # Install more recent versions of some OS X tools
 install homebrew/dupes/grep
+
+# Install php and dependencies
 install php54
+install php54-mcrypt
+
+# Install python and dependencies
+install python
 
 # Install everything else
 install ag
@@ -25,9 +33,9 @@ install ffmpeg
 install fish
 install git
 install graphicsmagick
+install htop
 install iftop
 install legit
-install htop
 install mariadb
 install ngrep
 install node
@@ -35,7 +43,6 @@ install rbenv
 install ruby-build
 # install sitespeedio/sitespeedio/sitespeed.io
 install ssh-copy-id
-install python
 install vim
 install wget
 
