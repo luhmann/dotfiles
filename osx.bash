@@ -26,7 +26,7 @@ defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 # defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+sudo nvram SystemAudioVolume=%80
 
 # Menu bar: hide the useless Time Machine and Volume icons
 # defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
