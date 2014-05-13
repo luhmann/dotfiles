@@ -23,6 +23,7 @@ cask install google-chrome
 cask install google-chrome-canary
 cask install handbrake
 cask install knox
+cask install hazel
 cask install istat-menus
 cask install iterm2
 cask install kaleidoscope
