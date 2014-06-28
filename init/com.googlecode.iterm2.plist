@@ -27,7 +27,7 @@
 	<key>CopyLastNewline</key>
 	<false/>
 	<key>CopySelection</key>
-	<true/>
+	<false/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Wombat</key>
@@ -302,7 +302,7 @@
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>3</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dev/dotfiles/init</string>
+	<string>~/Documents</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -314,7 +314,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>1401 632 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 22 2585 1396 0 0 2560 1418 </string>
+	<string>-2551 0 2550 1418 -2560 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-2560 967 1280 451 -2560 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -3314,7 +3314,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-05-05T19:33:29Z</date>
+	<date>2014-06-13T11:02:11Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -9634,6 +9634,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140421</string>
+	<string>1.0.0.20140518</string>
 </dict>
 </plist>
