@@ -16,14 +16,14 @@ set -g -x EDITOR vim
 # Homebrew
 set --export PATH /usr/local/bin /usr/local/sbin $PATH
 
- # Npm binaries
- set --export PATH /usr/local/share/npm/bin $PATH
+# Npm binaries
+set --export PATH /usr/local/share/npm/bin $PATH
 
 # Node
 set --export NODE_PATH /usr/local/lib/node_modules
 
- # Color grep output
- set --export GREP_OPTIONS --color=auto
+# Color grep output
+set --export GREP_OPTIONS --color=auto
 
 # Rbenv
 set --export PATH $HOME/.rbenv/bin $PATH
