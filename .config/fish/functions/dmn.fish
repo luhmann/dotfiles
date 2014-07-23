@@ -1,3 +1,3 @@
 function dmn
-  cd ~/Dev/myvideo/myvideo-nextlevel
+  cd ~/Dev/myvideo/nextlevel-frontend
 end

@@ -1,3 +1,3 @@
 function dms
-  cd ~/Dev/myvideo/myvideo-styles
+  cd ~/Dev/myvideo/static
 end
