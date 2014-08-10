@@ -22,6 +22,7 @@ install homebrew/dupes/grep
 install php54
 install php54-mcrypt
 install phpunit
+install phpmd
 
 # Install python and dependencies
 install python
