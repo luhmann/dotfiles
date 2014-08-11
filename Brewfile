@@ -26,6 +26,7 @@ install phpmd
 
 # Install python and dependencies
 install python
+install python3
 
 # Install everything else
 install ag
