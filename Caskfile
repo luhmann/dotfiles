@@ -4,13 +4,9 @@ tap caskroom/versions
 update
 upgrade
 
-cask install adobe-creative-cloud
-cask install airmail
 cask install alfred
 cask alfred link
 cask install appdelete
-cask install bartender
-cask install cd-to
 cask install charles
 cask install dash
 cask install diffmerge
@@ -32,7 +28,7 @@ cask install mplayerx
 cask install navicat-for-postgresql
 cask install onyx
 cask install opera
-cask install parallels
+# cask install parallels
 cask install phpstorm
 cask install pycharm
 cask install sequel-pro
@@ -49,8 +45,8 @@ cask install trim-enabler
 cask install vagrant
 cask install virtualbox
 cask install vlc
-cask install vmware-fusion
+# cask install vmware-fusion
 cask install webstorm
-cask install xee
+# cask install xee
 
 cleanup
