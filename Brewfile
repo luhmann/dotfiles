@@ -19,7 +19,9 @@ install findutils
 install homebrew/dupes/grep
 
 # Install php and dependencies
-install php54
+install php54 --with-pgsql
+install php54-xhprof
+install php54-xdebug
 install php54-mcrypt
 install phpunit
 install phpmd
