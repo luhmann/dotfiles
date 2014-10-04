@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pip install virtualenv
+sudo pip install virtualenv
