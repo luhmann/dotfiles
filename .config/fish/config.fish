@@ -22,9 +22,6 @@ set --export PATH /usr/local/share/npm/bin $PATH
 # Node
 set --export NODE_PATH /usr/local/lib/node_modules
 
-# Homebrew github api-roken
-set --export HOMEBREW_GITHUB_API_TOKEN 580562fff60f9fabc64d0e1d4d102d189022b4f0
-
 # Color grep output
 set --export GREP_OPTIONS --color=auto
 
