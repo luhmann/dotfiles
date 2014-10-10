@@ -1,7 +1,17 @@
-function fish_prompt
-  if test -d .git
-    printf '%s@%s %s%s%s:%s> ' (whoami) (hostname|cut -d . -f 1) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (parse_git_branch)
-  else
-    printf '%s@%s %s%s%s> ' (whoami) (hostname|cut -d . -f 1) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
+function fish_prompt --description 'Write out the prompt'
+
+  set -l last_status $status
+
+  set_color $fish_color_cwd
+  echo -n (prompt_pwd)
+  set_color normal
+
+  __informative_git_prompt
+
+  if not test $last_status -eq 0
+    set_color $fish_color_error
   end
+
+  echo -n ' $ '
+
 end
