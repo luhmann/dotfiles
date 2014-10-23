@@ -83,3 +83,5 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
 command! NT NERDTreeToggle
+
+cmap w!! w !sudo tee >/dev/null %
