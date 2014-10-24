@@ -7,6 +7,7 @@ alias dt="cd ~/Desktop"
 alias dmn="cd /srv/www/frontend/current"
 alias dms="cd /srv/www/styles"
 alias dmsc="cd /srv/www/scaler/current"
+alias phptest="phpunit -c app"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
