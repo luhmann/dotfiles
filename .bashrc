@@ -5,8 +5,8 @@ alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dmn="cd /srv/www/frontend/current"
-alias dms"cd /srv/www/styles"
-alias dmsc"cd /srv/www/scaler/current"
+alias dms="cd /srv/www/styles"
+alias dmsc="cd /srv/www/scaler/current"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
