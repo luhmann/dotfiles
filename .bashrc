@@ -4,10 +4,9 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting¬
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
-alias g="git"
-alias h="history"
-alias j="jobs"
+alias dmn="cd /srv/www/frontend/current"
+alias dms"cd /srv/www/styles"
+alias dmsc"cd /srv/www/scaler/current"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '

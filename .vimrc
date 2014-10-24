@@ -84,4 +84,4 @@ NeoBundleCheck
 
 command! NT NERDTreeToggle
 
-cmap w!! w !sudo tee >/dev/null %
+command W w !sudo tee % >/dev/null
