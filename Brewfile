@@ -25,6 +25,7 @@ install php54-xdebug
 install php54-mcrypt
 install phpunit
 install phpmd
+install php-code-sniffer
 
 # Install python and dependencies
 install python
