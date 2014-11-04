@@ -1,5 +1,6 @@
 #Add some taps
 tap homebrew/dupes
+tap homebrew/versions
 tap josegonzalez/homebrew-php
 tap phinze/cask
 
