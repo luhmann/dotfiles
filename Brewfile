@@ -41,6 +41,7 @@ install git
 install graphicsmagick
 install htop
 install iftop
+install jq
 install legit
 install mariadb
 install ngrep
