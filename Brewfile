@@ -26,6 +26,7 @@ install php54-mcrypt
 install phpunit
 install phpmd
 install php-code-sniffer
+install php-version
 
 # Install python and dependencies
 install python

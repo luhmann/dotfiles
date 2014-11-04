@@ -38,3 +38,5 @@ set --export HOMEBREW_CASK_OPTS --appdir=/Applications
 
 # expose PATH to graphical apps
 launchctl setenv PATH $PATH
+
+source (brew --prefix php-version)/php-version.sh ;and php-version 5
