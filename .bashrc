@@ -10,6 +10,8 @@ alias dmu="cd /srv/www/upload/current"
 alias dmsc="cd /srv/www/scaler/current"
 alias phptest="phpunit -c app"
 alias sr="sudo service php5-fpm restart && sudo service nginx restart"
+alias nfi="php app/console my:fi"
+alias nca="php app/console ca:cl"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
