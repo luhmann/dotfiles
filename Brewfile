@@ -19,11 +19,14 @@ install findutils
 # Install more recent versions of some OS X tools
 install homebrew/dupes/grep
 
+# install postgres as dependency for php
+install postgres
+
 # Install php and dependencies
-install php54 --with-pgsql
-install php54-xhprof
-install php54-xdebug
-install php54-mcrypt
+install php56 --with-pgsql
+install php56-xhprof
+install php56-xdebug
+install php56-mcrypt
 install phpunit
 install phpmd
 install php-code-sniffer
@@ -37,6 +40,7 @@ install python3
 install ag
 install brew-cask
 install bash
+install dos2unix
 install ffmpeg
 install fish
 install git
@@ -54,5 +58,6 @@ install ruby-build
 install ssh-copy-id
 install vim
 install wget
+install youtube-dl
 
 brew cleanup
