@@ -6,6 +6,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dmn="cd /srv/www/frontend/current"
 alias dms="cd /srv/www/styles"
+alias dmu="cd /srv/www/upload/current"
 alias dmsc="cd /srv/www/scaler/current"
 alias phptest="phpunit -c app"
 
