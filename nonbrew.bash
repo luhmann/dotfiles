@@ -8,3 +8,6 @@ fi
 
 # Install neobundle for vim
 curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+
+# install command-line tools
+xcode-select --install

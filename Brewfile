@@ -2,7 +2,7 @@
 tap homebrew/dupes
 tap homebrew/versions
 tap josegonzalez/homebrew-php
-tap phinze/cask
+# tap phinze/cask
 
 # Tap for sitespeed.io
 # tap tobli/browsertime
