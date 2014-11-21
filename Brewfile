@@ -2,7 +2,7 @@
 tap homebrew/dupes
 tap homebrew/versions
 tap josegonzalez/homebrew-php
-tap phinze/cask
+# tap phinze/cask
 
 update
 upgrade
@@ -20,7 +20,7 @@ install homebrew/dupes/grep
 install postgres
 
 # Install php and dependencies
-install php56 --with-pgsql
+install -v --with-fpm --with-mysql --disable-opcache --with-pgsql php56
 install php56-xhprof
 install php56-xdebug
 install php56-mcrypt
@@ -56,4 +56,4 @@ install vim --override-system-vi
 install wget
 install youtube-dl
 
-brew cleanup
+cleanup
