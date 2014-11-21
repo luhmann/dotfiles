@@ -4,9 +4,6 @@ tap homebrew/versions
 tap josegonzalez/homebrew-php
 tap phinze/cask
 
-# Tap for sitespeed.io
-# tap tobli/browsertime
-
 update
 upgrade
 
@@ -44,7 +41,7 @@ install dos2unix
 install ffmpeg
 install fish
 install git
-install graphicsmagick
+install graphicsmagick --with-webp
 install htop
 install iftop
 install jq
@@ -54,9 +51,8 @@ install ngrep
 install node
 install rbenv
 install ruby-build
-# install sitespeedio/sitespeedio/sitespeed.io
 install ssh-copy-id
-install vim
+install vim --override-system-vi
 install wget
 install youtube-dl
 

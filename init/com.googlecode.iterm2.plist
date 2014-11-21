@@ -718,7 +718,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads/mbadolato-iTerm2-Color-Schemes-20a54b0/schemes</string>
+	<string>~/Documents</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -745,7 +745,9 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>444 299 605 485 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1920 0 1920 1178 1920 0 1920 1178 </string>
+	<string>4 6 1915 1165 0 0 1920 1177 </string>
+	<key>NeverWarnAboutShortLivedSessions_F7E320F9-8672-4CE5-8F3F-3D747F2610B0</key>
+	<true/>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3743,7 +3745,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-09-25T10:07:15Z</date>
+	<date>2014-10-23T13:32:07Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -3784,7 +3786,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>Lucida Grande</string>
+	<string>.Helvetica Neue DeskInterface</string>
 	<key>Window Arrangements</key>
 	<dict>
 		<key>2col</key>
