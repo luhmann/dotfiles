@@ -1,3 +1,3 @@
 function ssh-stage-ez
-ssh fdietrich@10.64.97.9
+ssh fdietrich@vm-ezpublish-01.sta-1.magic-technik.de
 end
