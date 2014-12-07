@@ -21,16 +21,16 @@ cask install handbrake
 cask install knox
 cask install hazel
 cask install istat-menus
-cask install iterm2
+# cask install iterm2
 cask install kaleidoscope
 # cask install makemkv
 cask install mplayerx
-cask install navicat-for-postgresql
+# cask install navicat-for-postgresql
 cask install onyx
 cask install opera
 # cask install parallels
-cask install phpstorm
-cask install pycharm
+# cask install phpstorm
+# cask install pycharm
 cask install sequel-pro
 cask install skitch
 cask install skype
@@ -38,15 +38,15 @@ cask install slate
 cask install spotify
 cask install sublime-text3
 cask install the-unarchiver
-cask install totalfinder
+# cask install totalfinder
 cask install transmission
 cask install transmit
 cask install trim-enabler
 cask install vagrant
-cask install virtualbox
+# cask install virtualbox
 cask install vlc
 # cask install vmware-fusion
-cask install webstorm
+# cask install webstorm
 # cask install xee
 
 cleanup

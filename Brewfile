@@ -2,7 +2,7 @@
 tap homebrew/dupes
 tap homebrew/versions
 tap josegonzalez/homebrew-php
-# tap phinze/cask
+tap phinze/cask
 
 update
 upgrade
@@ -41,11 +41,13 @@ install dos2unix
 install ffmpeg
 install fish
 install git
+install git-extras
 install graphicsmagick --with-webp
 install htop
 install iftop
 install jq
 install legit
+install mackup
 install mariadb
 install ngrep
 install node

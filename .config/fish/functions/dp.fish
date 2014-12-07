@@ -1,3 +1,3 @@
 function dp
-  cd ~/Dev/myvideo/puppet-master-trusty
+  cd ~/Dev/myvideo/puppet-master
 end
