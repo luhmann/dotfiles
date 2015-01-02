@@ -51,6 +51,7 @@ install mackup
 install mariadb
 install ngrep
 install node
+install pv
 install rbenv
 install ruby-build
 install ssh-copy-id
