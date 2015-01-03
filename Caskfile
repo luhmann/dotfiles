@@ -17,6 +17,7 @@ cask install fontprep
 # cask install ghostlab
 cask install google-chrome
 cask install google-chrome-canary
+cask install google-drive
 cask install handbrake
 cask install knox
 cask install hazel
@@ -45,6 +46,7 @@ cask install trim-enabler
 cask install vagrant
 # cask install virtualbox
 cask install vlc
+cask install whatsize
 # cask install vmware-fusion
 # cask install webstorm
 # cask install xee
