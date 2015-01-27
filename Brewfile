@@ -49,6 +49,7 @@ install jq
 install legit
 install mackup
 install mariadb
+install multitail
 install ngrep
 install node
 install pv
