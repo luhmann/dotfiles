@@ -34,7 +34,7 @@ cask install opera
 # cask install pycharm
 cask install sequel-pro
 cask install skitch
-cask install skype
+# cask install skype
 cask install slate
 cask install spotify
 cask install sublime-text3
