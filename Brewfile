@@ -3,6 +3,7 @@ tap homebrew/dupes
 tap homebrew/versions
 tap josegonzalez/homebrew-php
 tap phinze/cask
+tap karan/karan
 
 update
 upgrade
@@ -42,6 +43,7 @@ install ffmpeg
 install fish
 install git
 install git-extras
+install gitignore
 install graphicsmagick --with-webp
 install htop
 install iftop
