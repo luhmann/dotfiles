@@ -45,6 +45,7 @@ install git
 install git-extras
 install gitignore
 install graphicsmagick --with-webp
+install gnu-tar
 install htop
 install iftop
 install jq
