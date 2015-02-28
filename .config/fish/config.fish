@@ -38,3 +38,5 @@ set --export HOMEBREW_CASK_OPTS --appdir=/Applications
 
 # expose PATH to graphical apps
 launchctl setenv PATH $PATH
+
+source ~/.config/fish/nvm-wrapper/nvm.fish
