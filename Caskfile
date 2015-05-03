@@ -26,6 +26,7 @@ cask install istat-menus
 cask install kaleidoscope
 # cask install makemkv
 cask install mplayerx
+cask install mongohub
 # cask install navicat-for-postgresql
 cask install onyx
 cask install opera
