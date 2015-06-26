@@ -1,0 +1,3 @@
+function startrethink
+rethinkdb
+end
