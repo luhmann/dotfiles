@@ -9,3 +9,4 @@ npm install -g nodemon
 npm install -g gulp
 npm install -g jscs
 npm install -g trash
+npm install -g jscs
