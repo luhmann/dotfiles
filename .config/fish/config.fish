@@ -41,3 +41,7 @@ launchctl setenv PATH $PATH
 
 # setup nvm via nvm wrapper
 source ~/.config/fish/nvm-wrapper/nvm.fish
+
+set --export JAVA_HOME (/usr/libexec/java_home -v 1.8)
+
+setproxy
