@@ -1,7 +1,7 @@
 # personal details
 
 [user]
-	email = jfd@daenen4.de
+	email = jan-florian.dietrich@epost-dev.de
 	name = Jan Florian Dietrich
 
 [credential]
@@ -96,3 +96,14 @@
 
 [push]
 	default = simple
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
