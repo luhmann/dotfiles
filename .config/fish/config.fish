@@ -42,6 +42,11 @@ launchctl setenv PATH $PATH
 # setup nvm via nvm wrapper
 source ~/.config/fish/nvm-wrapper/nvm.fish
 
+# enable autojump
+[ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
+
+# set JAVA_HOME env-variable
 set --export JAVA_HOME (/usr/libexec/java_home -v 1.8)
 
+# set the proxy
 setproxy

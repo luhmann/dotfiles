@@ -36,11 +36,13 @@ install python3
 
 # Install everything else
 install ag
+install autojump
 install brew-cask
 install bash
 install dos2unix
 install ffmpeg
 install fish
+reinstall --HEAD fzf
 install git
 install git-extras
 install gitignore
