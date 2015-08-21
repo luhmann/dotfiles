@@ -57,7 +57,7 @@
 
 [apply]
 	# detect whitespace errors when applying a patch
-	whitespace = fix
+	whitespace = warn
 	editor = vim
 
 [core]
