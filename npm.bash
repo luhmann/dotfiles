@@ -11,4 +11,6 @@ npm install -g jscs
 npm install -g trash
 npm install -g jscs
 npm install -g caniuse-cmd
-npm install --global speed-test
+npm install -g speed-test
+npm install -g eslint
+npm install -g babel-eslint
