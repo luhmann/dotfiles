@@ -15,3 +15,4 @@ npm install -g speed-test
 npm install -g eslint
 npm install -g babel-eslint
 npm install -g sloc
+npm install -g serve
