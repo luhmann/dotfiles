@@ -55,6 +55,7 @@ install legit
 install mackup
 install mariadb
 install multitail
+install mycli
 install ngrep
 install node
 install pv
