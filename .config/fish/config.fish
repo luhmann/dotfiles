@@ -40,7 +40,8 @@ set --export HOMEBREW_CASK_OPTS --appdir=/Applications
 launchctl setenv PATH $PATH
 
 # setup nvm via nvm wrapper
-source ~/.config/fish/nvm-wrapper/nvm.fish
+bass source ~/.nvm/nvm.sh
+# source ~/.config/fish/nvm-wrapper/nvm.fish
 
 # enable autojump
 [ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
