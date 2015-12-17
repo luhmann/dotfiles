@@ -1,69 +1,65 @@
 #Add some taps
-tap homebrew/dupes
-tap homebrew/versions
-tap josegonzalez/homebrew-php
-tap phinze/cask
-tap karan/karan
-
-update
-upgrade
+tap 'homebrew/dupes'
+tap 'homebrew/versions'
+tap 'josegonzalez/homebrew-php'
+tap 'phinze/cask'
+tap 'karan/karan'
 
 # Install GNU core utilities (those that come with OS X are outdated)
-install coreutils
+brew 'coreutils'
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-install findutils
+brew 'findutils'
 
 # Install more recent versions of some OS X tools
-install homebrew/dupes/grep
+brew 'homebrew/dupes/grep'
 
-# install postgres as dependency for php
-install postgres
+# brew postgres as dependency for php
+#brew postgres
 
 # Install php and dependencies
-install -v --with-fpm --with-mysql --disable-opcache --with-pgsql php56
-install php56-xhprof
-install php56-xdebug
-install php56-mcrypt
-install phpunit
-install phpmd
-install php-code-sniffer
-install php-version
+#brew -v --with-fpm --with-mysql --disable-opcache --with-pgsql php56
+#brew php56-xhprof
+#brew php56-xdebug
+#brew php56-mcrypt
+#brew phpunit
+#brew phpmd
+#brew php-code-sniffer
+#brew php-version
 
 # Install python and dependencies
-install python
-install python3
+#brew python
+#brew python3
 
 # Install everything else
-install ag
-install autojump
-install brew-cask
-install bash
-install dos2unix
-install ffmpeg
-install fish
-reinstall --HEAD fzf
-install git
-install git-extras
-install gitignore
-install graphicsmagick --with-webp
-install gnu-tar
-install htop
-install iftop
-install jq
-install legit
-install mackup
-install mariadb
-install multitail
-install mycli
-install ngrep
-install node
-install pv
-install rbenv
-install ruby-build
-install ssh-copy-id
-install vim --override-system-vi
-install wget
-install youtube-dl
+brew 'ag'
+brew 'autojump'
+brew 'brew-cask'
+brew 'bash'
+#brew dos2unix
+brew 'ffmpeg'
+brew 'fish'
+brew 'fzf'
+brew 'git'
+brew 'git-extras'
+brew 'gitignore'
+# brew 'graphicsmagick --with-webp
+brew 'gnu-tar'
+brew 'htop'
+brew 'iftop'
+brew 'jq'
+brew 'legit'
+# brew mackup
+# brew mariadb
+brew 'multitail'
+# brew mycli
+brew 'ngrep'
+#brew 'node'
+brew 'pv'
+#brew rbenv
+#brew ruby-build
+brew 'ssh-copy-id'
+brew 'vim', args: ['--override-system']
+brew 'wget'
+brew 'youtube-dl'
 
-cleanup

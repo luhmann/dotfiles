@@ -1,55 +1,48 @@
+cask_args appdir: '/Applications'
+
 # Install Casks
-tap caskroom/versions
+tap 'caskroom/versions'
 
-update
-upgrade
-
-cask install alfred
-cask alfred link
-cask install appdelete
-cask install charles
-cask install dash
-cask install diffmerge
-cask install dropbox
-cask install evernote
-cask install firefox
-cask install fontprep
-# cask install ghostlab
-cask install google-chrome
-cask install google-chrome-canary
-cask install google-drive
-cask install handbrake
-cask install knox
-cask install hazel
-cask install istat-menus
-# cask install iterm2
-cask install kaleidoscope
-# cask install makemkv
-cask install mplayerx
-cask install mongohub
-# cask install navicat-for-postgresql
-cask install onyx
-cask install opera
-# cask install parallels
-# cask install phpstorm
-# cask install pycharm
-cask install sequel-pro
-cask install skitch
-# cask install skype
-cask install slate
-cask install spotify
-cask install sublime-text3
-cask install the-unarchiver
-# cask install totalfinder
-cask install transmission
-cask install transmit
-cask install trim-enabler
-cask install vagrant
-# cask install virtualbox
-cask install vlc
-cask install whatsize
-# cask install vmware-fusion
-# cask install webstorm
-# cask install xee
-
-cleanup
+cask 'alfred'
+cask 'appdelete'
+# cask 'charles'
+cask 'dash'
+cask 'diffmerge'
+cask 'dropbox'
+cask 'evernote'
+cask 'firefox', args: { appdir: '/Applications' }
+cask 'fontprep'
+# cask 'ghostlab'
+cask 'google-chrome'
+#cask 'google-chrome-canary'
+#cask 'google-drive'
+#cask 'handbrake'
+#cask 'knox'
+#cask 'hazel'
+#cask 'istat'-menus
+# cask 'iterm2'
+#cask 'kaleidoscope'
+# cask 'makemkv'
+cask 'mplayerx'
+#cask 'mongohub'
+# cask 'navicat'-for-postgresql
+cask 'onyx'
+#cask 'opera'
+# cask 'parallels'
+# cask 'phpstorm'
+# cask 'pycharm'
+#cask 'sequel-pro'
+cask 'skitch'
+# cask 'skype'
+cask 'slate'
+cask 'spotify'
+#cask 'sublime-text3'
+#cask 'the-unarchiver'
+# cask 'totalfinder'
+cask 'transmit'
+# cask 'virtualbox'
+cask 'vlc'
+cask 'whatsize'
+# cask 'vmware'-fusion
+# cask 'webstorm'
+# cask 'xee'

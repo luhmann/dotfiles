@@ -3,7 +3,7 @@
 # Lets do everything at once
 
 # Lets do some os settings
-./osx.bash
+# ./osx.bash
 
 # Install non homebrew dependencies
 ./nonbrew.bash
