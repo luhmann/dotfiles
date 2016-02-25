@@ -69,7 +69,23 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'kien/rainbow_parentheses.vim'
+NeoBundle 'ap/vim-css-color'
+NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'othree/javascript-libraries-syntax.vim'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'sheerun/vim-polyglot'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'hdima/python-syntax'
+NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'mattn/gist-vim'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'wavded/vim-stylus'
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
+
 
 " Required:
 call neobundle#end()
