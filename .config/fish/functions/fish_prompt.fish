@@ -38,7 +38,7 @@ function __cmd_duration -S -d 'Show command duration'
 end
 
 function fish_right_prompt -d 'The right hand side of my pretty fish prompt'
-    set -l _display_status $status
-    printf "%s %s" (__cmd_duration) $_display_status
+    set -l errorc $status
 
+    printf "%s %s" (__cmd_duration) $errorc
 end
