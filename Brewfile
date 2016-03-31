@@ -1,6 +1,5 @@
 #Add some taps
 tap 'homebrew/dupes'
-tap 'homebrew/versions'
 tap 'josegonzalez/homebrew-php'
 tap 'phinze/cask'
 tap 'karan/karan'
@@ -62,4 +61,3 @@ brew 'ssh-copy-id'
 brew 'vim', args: ['--override-system']
 brew 'wget'
 brew 'youtube-dl'
-

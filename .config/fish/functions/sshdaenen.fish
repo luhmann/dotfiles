@@ -1,3 +1,3 @@
 function sshdaenen
-  ssh jfd@daenen4.de
+  ssh jfd@85.214.141.48
 end
