@@ -1,8 +1,9 @@
 #!/bin/bash
 
-brew bundle Brewfile
-brew bundle Caskfile
+brew tap Homebrew/bundle
 
-/usr/local/Cellar/fzf/HEAD/install
+brew bundle
+
+ /usr/local/opt/fzf/install
 
 exit 0

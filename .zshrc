@@ -28,3 +28,6 @@ export VISUAL=/usr/local/bin/vim
 
 # expose JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+# Enable fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
