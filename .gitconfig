@@ -93,6 +93,10 @@
 
 [remote "origin"]
 	push = HEAD
+#[https]
+#	proxy = http://proxy.inf.epost-dev.de:8080
+#[http]
+# 	proxy = http://proxy.inf.epost-dev.de:8080
 
 [push]
 	default = simple
