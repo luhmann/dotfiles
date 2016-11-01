@@ -1,5 +1,8 @@
 cask_args appdir: '/Applications'
 
+# Casks provide the same functionality for real apps
+tap 'caskroom/cask'
+
 # Install Casks
 tap 'caskroom/versions'
 
@@ -13,36 +16,22 @@ cask 'evernote'
 cask 'firefox', args: { appdir: '/Applications' }
 cask 'fontprep'
 # cask 'ghostlab'
-cask 'google-chrome'
+# cask 'google-chrome'
 #cask 'google-chrome-canary'
-#cask 'google-drive'
 #cask 'handbrake'
-#cask 'knox'
 #cask 'hazel'
-#cask 'istat'-menus
-# cask 'iterm2'
+cask 'iterm2'
 #cask 'kaleidoscope'
-# cask 'makemkv'
 cask 'mplayerx'
-#cask 'mongohub'
-# cask 'navicat'-for-postgresql
 cask 'onyx'
 #cask 'opera'
 # cask 'parallels'
-# cask 'phpstorm'
-# cask 'pycharm'
 #cask 'sequel-pro'
 cask 'skitch'
 # cask 'skype'
-cask 'slate'
+cask 'spectacle'
 cask 'spotify'
-#cask 'sublime-text3'
-#cask 'the-unarchiver'
-# cask 'totalfinder'
-cask 'transmit'
-# cask 'virtualbox'
+cask 'sublime-text3'
+cask 'the-unarchiver'
 cask 'vlc'
 cask 'whatsize'
-# cask 'vmware'-fusion
-# cask 'webstorm'
-# cask 'xee'

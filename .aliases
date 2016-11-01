@@ -1,0 +1,45 @@
+alias ..='cd ../..'
+alias ..='cd ../../..'
+alias cask='cd /opt/homebrew-cask/Caskroom/'
+alias ddev='cd ~/Dev'
+alias ddot='cd ~/Dev/dotfiles'
+alias de='cd ~/Dev/epost'
+alias dh='cd ~'
+alias fname='find . -iname'
+alias ga='git add --all .'
+alias gc='git commit'
+alias gco='git checkout'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gs='git status -sb'
+alias gurl='git config --get remote.origin.url'
+alias hosts='sudo vim /etc/hosts'
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+alias ll='ls -laoh'
+alias o='open'
+alias oo='open .'
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+# alias ssh='~/.scripts/cssh.sh'
+alias v='vim'
+alias sudo='sudo '
+
+function sshtc() {
+  ssh jdietrich@teamcity-bui-"$1".bis.epost-dev.de
+}
+
+function pcloud() {
+    git diff > /Users/jfd/Library/Mobile\ Documents/com~apple~CloudDocs/patches/"$1".patch
+}
+
+function setproxy() {
+  export HTTP_PROXY=http://proxy.inf.epost-dev.de:8080
+  export HTTPS_PROXY=http://proxy.inf.epost-dev.de:8080
+#  export NO_PROXY="*.local, 169.254/16, localhost, *.epost-dev.de, *.clear-mail.de, 10.172.*, 127.0.0.1, 192.168.*" 
+}
+
+function unsetproxy() {
+  unset HTTP_PROXY
+  unset HTTPS_PROXY
+  unset NO_PROXY
+}

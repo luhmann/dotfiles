@@ -5,7 +5,6 @@
 which brew &> /dev/null
 if [[ $? -ne 0 ]]; then
   printf "\nError: Homebrew not installed\n\n"
-  cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
   exit 1
 fi
 
