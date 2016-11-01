@@ -25,3 +25,6 @@ source ~/.aliases
 # Configure default editor
 export EDITOR=/usr/local/bin/vim
 export VISUAL=/usr/local/bin/vim
+
+# expose JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)

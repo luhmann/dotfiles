@@ -47,6 +47,7 @@ brew 'htop'
 brew 'iftop'
 brew 'jq'
 brew 'mackup'
+brew 'mas'
 # brew mariadb
 brew 'multitail'
 # brew mycli

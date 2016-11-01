@@ -1,17 +1,9 @@
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting¬
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias dmn="cd /srv/www/frontend/current"
-alias dms="cd /srv/www/styles"
-alias dmu="cd /srv/www/upload/current"
-alias dmsc="cd /srv/www/scaler/current"
-alias phptest="./bin/phpunit -c app"
-alias sr="sudo service php5-fpm restart && sudo service nginx restart"
-alias sfi="php app/console my:fi"
-alias sca="php app/console ca:cl"
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
