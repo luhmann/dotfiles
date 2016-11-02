@@ -1,5 +1,6 @@
-alias ..='cd ../..'
-alias ..='cd ../../..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias cask='cd /opt/homebrew-cask/Caskroom/'
 alias ddev='cd ~/Dev'
 alias ddot='cd ~/Dev/dotfiles'
@@ -9,6 +10,7 @@ alias fname='find . -iname'
 alias ga='git add --all .'
 alias gc='git commit'
 alias gco='git checkout'
+alias genkey='openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=localhost" -keyout key.pem -out cert.pem'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gs='git status -sb'
 alias gurl='git config --get remote.origin.url'
@@ -68,4 +70,8 @@ function psg() {
 
 function rh() {
     curl -s -D - "$1" -o /dev/null
+}
+
+function jira() {
+  open https://tasktracker.clear-mail.de/tracker/browse/"$1"
 }

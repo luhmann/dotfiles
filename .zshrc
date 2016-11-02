@@ -26,8 +26,11 @@ source ~/.aliases
 export EDITOR=/usr/local/bin/vim
 export VISUAL=/usr/local/bin/vim
 
-# expose JAVA_HOME
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+# Put local node_modules/.bin in path
+export PATH="$PATH:./node_modules/.bin"
 
-# Enable fzf
+# enable fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Set JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
