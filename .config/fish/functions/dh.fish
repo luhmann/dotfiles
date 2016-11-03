@@ -1,3 +1,0 @@
-function dh
-  cd ~
-end

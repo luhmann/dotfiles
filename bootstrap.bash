@@ -21,7 +21,7 @@ fi
 
 printf "# Syncing to home folder...\n"
 function doSync() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "init" --exclude "*.bash" --exclude "Brewfile" --exclude "Caskfile" --exclude "apply-settings.fish" --exclude "python.bash" --exclude "*.md" --exclude "*.txt" -av . ~
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "init" --exclude "*.bash" --exclude "Brewfile" --exclude "Caskfile" --exclude "python.bash" --exclude "*.md" --exclude "*.txt" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doSync
@@ -38,7 +38,7 @@ fi
 unset doSync
 
 printf "\n# Checking for fish... "
-brew ls fish &> /dev/null
+brew ls zsh &> /dev/null
 if [[ $? -ne 0 ]]; then
   printf "not found, installing...\n\n"
   brew update
@@ -46,7 +46,7 @@ if [[ $? -ne 0 ]]; then
     printf "\nError: Homebrew update failed. Aborting.\n\n"
     exit 1
   fi
-  brew install fish
+  brew install zsh 
   if [[ $? -ne 0 ]]; then
     printf "\nError: fish installation failed. Aborting.\n\n"
     exit 1
@@ -57,10 +57,25 @@ else
 fi
 
 printf "# Setting up/refreshing fish settings (i.e. universal variables)... "
-fish apply-settings.fish
+ls ~/.zprezto
 if [[ $? -ne 0 ]]; then
-  printf "\nError: applying fish settings failed.\n\n"
-  exit 1
+  printf "\nPrezto not found, installing\n\n"
+  
+  # Switch to zsh
+  zsh
+    
+  # Clone prezto
+  git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+  
+  # Link config files
+  setopt EXTENDED_GLOB
+  for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+  done
+
+  # Get theme
+  git clone https://github.com/bhilburn/powerlevel9k.git  ~/.zprezto/modules/prompt/external/powerlevel9k
+  ln -s "${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/external/powerlevel9k/powerlevel9k.zsh-theme" "${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/functions/prompt_powerlevel9k_setup"
 else
   printf "done.\n\n"
 fi

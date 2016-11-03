@@ -1,3 +1,0 @@
-function startrethink
-rethinkdb
-end
