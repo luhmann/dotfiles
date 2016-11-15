@@ -21,7 +21,7 @@ fi
 
 printf "# Syncing to home folder...\n"
 function doSync() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "init" --exclude "*.bash" --exclude "Brewfile" --exclude "Caskfile" --exclude "python.bash" --exclude "*.md" --exclude "*.txt" -av . ~
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "init" --exclude "*.bash" --exclude "Brewfile" --exclude "Caskfile" --exclude "python.bash" --exclude "z*" --exclude "*.md" --exclude "*.txt" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doSync
@@ -37,7 +37,7 @@ else
 fi
 unset doSync
 
-printf "\n# Checking for fish... "
+printf "\n# Checking for zsh... "
 brew ls zsh &> /dev/null
 if [[ $? -ne 0 ]]; then
   printf "not found, installing...\n\n"
@@ -61,20 +61,23 @@ ls ~/.zprezto
 if [[ $? -ne 0 ]]; then
   printf "\nPrezto not found, installing\n\n"
   
-  # Switch to zsh
-  zsh
-    
   # Clone prezto
   git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
   
+  # copy prezto config files
+  cp -n zpreztorc zprofile zshrc "${ZDOTDIR:-$HOME}/.zprezto/runcoms"
+
   # Link config files
-  setopt EXTENDED_GLOB
-  for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-    ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-  done
+
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zlogin" "${ZDOTDIR:-$HOME}/zlogin"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zlogout" "${ZDOTDIR:-$HOME}/zlogout"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zpreztorc" "${ZDOTDIR:-$HOME}/zpreztorc"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zprofile" "${ZDOTDIR:-$HOME}/zprofile"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zshenv" "${ZDOTDIR:-$HOME}/zshenv"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zshrc" "${ZDOTDIR:-$HOME}/zshrc"
 
   # Get theme
-  git clone https://github.com/bhilburn/powerlevel9k.git  ~/.zprezto/modules/prompt/external/powerlevel9k
+  git clone https://github.com/bhilburn/powerlevel9k.git "${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/external/powerlevel9k"
   ln -s "${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/external/powerlevel9k/powerlevel9k.zsh-theme" "${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/functions/prompt_powerlevel9k_setup"
 else
   printf "done.\n\n"
