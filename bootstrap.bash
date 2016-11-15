@@ -65,10 +65,11 @@ if [[ $? -ne 0 ]]; then
   git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
   
   # copy prezto config files
-  cp -n zpreztorc zprofile zshrc "${ZDOTDIR:-$HOME}/.zprezto/runcoms"
+  printf "\Copying config files\n\n"
+  cp zpreztorc zprofile zshrc "${ZDOTDIR:-$HOME}/.zprezto/runcoms"
 
   # Link config files
-
+  printf "\nLinking config files\n\n"
   ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zlogin" "${ZDOTDIR:-$HOME}/.zlogin"
   ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zlogout" "${ZDOTDIR:-$HOME}/.zlogout"
   ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zpreztorc" "${ZDOTDIR:-$HOME}/.zpreztorc"
