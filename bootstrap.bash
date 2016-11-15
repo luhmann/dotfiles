@@ -56,7 +56,7 @@ else
   printf "ok.\n\n"
 fi
 
-printf "# Setting up/refreshing fish settings (i.e. universal variables)... "
+printf "# Setting up/refreshing zsh settings (i.e. universal variables)... "
 ls ~/.zprezto
 if [[ $? -ne 0 ]]; then
   printf "\nPrezto not found, installing\n\n"
@@ -69,12 +69,12 @@ if [[ $? -ne 0 ]]; then
 
   # Link config files
 
-  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zlogin" "${ZDOTDIR:-$HOME}/zlogin"
-  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zlogout" "${ZDOTDIR:-$HOME}/zlogout"
-  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zpreztorc" "${ZDOTDIR:-$HOME}/zpreztorc"
-  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zprofile" "${ZDOTDIR:-$HOME}/zprofile"
-  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zshenv" "${ZDOTDIR:-$HOME}/zshenv"
-  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.zshrc" "${ZDOTDIR:-$HOME}/zshrc"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zlogin" "${ZDOTDIR:-$HOME}/.zlogin"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zlogout" "${ZDOTDIR:-$HOME}/.zlogout"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zpreztorc" "${ZDOTDIR:-$HOME}/.zpreztorc"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" "${ZDOTDIR:-$HOME}/.zprofile"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshenv" "${ZDOTDIR:-$HOME}/.zshenv"
+  ln -s  "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zshrc" "${ZDOTDIR:-$HOME}/.zshrc"
 
   # Get theme
   git clone https://github.com/bhilburn/powerlevel9k.git "${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/external/powerlevel9k"
