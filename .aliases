@@ -2,6 +2,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias cask='cd /opt/homebrew-cask/Caskroom/'
+alias ccat='pygmentize -g'
 alias ddev='cd ~/Dev'
 alias ddot='cd ~/Dev/dotfiles'
 alias de='cd ~/Dev/epost'
@@ -53,7 +54,7 @@ function pcloud() {
 }
 
 function setproxy() {
-  npm config set proxy http://proxy.inf.epost-dev.de.com:8080
+  npm config set proxy http://proxy.inf.epost-dev.de:8080
   npm config set https-proxy http://proxy.inf.epost-dev.de:8080
   export HTTP_PROXY=http://proxy.inf.epost-dev.de:8080
   export HTTPS_PROXY=http://proxy.inf.epost-dev.de:8080
