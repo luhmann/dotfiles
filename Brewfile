@@ -5,45 +5,63 @@ tap 'homebrew/core'
 tap 'homebrew/dupes'
 tap 'homebrew/versions'
 tap 'homebrew/x11'
-
 cask 'java'
-
-brew 'openssl'
-brew 'git'
+brew 'autojump'
+brew 'readline'
 brew 'bash'
+brew 'boost'
 brew 'cookiecutter'
 brew 'coreutils'
+brew 'lame'
+brew 'git'
+brew 'x264'
+brew 'xvid'
 brew 'ffmpeg'
-brew 'sqlite'
-brew 'python'
-brew 'python3'
-
+brew 'fzf'
+brew 'gdbm'
+brew 'gist'
 brew 'git-extras'
 brew 'gnu-tar'
 brew 'htop-osx'
+brew 'openssl'
+brew 'sqlite'
+brew 'xz'
+brew 'python3'
 brew 'httpie'
 brew 'iftop'
+brew 'oniguruma'
 brew 'jq'
+brew 'libyaml'
+brew 'lua'
 brew 'mackup'
 brew 'mas'
+brew 'maven'
 brew 'mongodb'
 brew 'ngrep'
+brew 'nvm'
+brew 'pcre'
+brew 'python'
+brew 'rename'
 brew 'ruby'
 brew 'ssh-copy-id'
+brew 'tcpflow'
 brew 'the_silver_searcher'
 brew 'vim', args: ['with-override-system-vi']
 brew 'wget'
 brew 'youtube-dl'
 brew 'zsh'
-
 brew 'homebrew/dupes/grep'
-
-cask 'alfred'
+cask 'adium'
+cask 'alfred2'
 cask 'appdelete'
+cask 'arq'
+cask 'charles'
 cask 'dropbox'
 cask 'evernote'
 cask 'firefox'
+cask 'firefoxdeveloperedition'
 cask 'fontprep'
+cask 'google-chrome'
 cask 'handbrake'
 cask 'hazel'
 cask 'istat-menus'
@@ -53,27 +71,30 @@ cask 'onyx'
 cask 'opera'
 cask 'sequel-pro'
 cask 'skitch'
+cask 'slack'
+cask 'spectacle'
 cask 'spotify'
-cask 'sublime-text3'
 cask 'the-unarchiver'
+cask 'tower'
 cask 'transmit'
+cask 'tunnelblick'
+cask 'versions'
 cask 'vlc'
-
-mas 'Kindle (1.12.4)', id: 405399194
-mas 'Glyphs Mini (1.5.7)', id: 469036911
-mas 'Calcbot (1.0.6)', id: 931657367
-mas 'Navicat Essentials for PostgreSQL (11.2.14)', id: 466725643
-mas 'OmniGraffle (6.6.1)', id: 711830901
-mas 'Alternote (1.0.10)', id: 974971992
-mas 'DaisyDisk (4.3)', id: 411643860
-mas '1Password (6.3.5)', id: 443987910
-mas 'Patterns (1.1.2)', id: 429449079
-mas 'Numbers (4.0.5)', id: 409203825
-mas 'Wunderlist (3.4.5)', id: 410628904
-mas 'Xcode (8.1)', id: 497799835
-mas 'Pages (6.0.5)', id: 409201541
-mas 'xScope (4.2)', id: 889428659
-mas 'The Unarchiver (3.11.1)', id: 425424353
-mas 'Marked (1.4.3)', id: 448925439
-mas 'Airmail 2 (3.1)', id: 918858936
-mas 'Disk Diag (1.4)', id: 672206759
+cask 'whatsize'
+mas 'Kindle', id: 405399194
+mas 'Xcode', id: 497799835
+mas 'Glyphs Mini', id: 469036911
+mas '1Password', id: 443987910
+mas 'Patterns', id: 429449079
+mas 'OmniGraffle', id: 711830901
+mas 'Airmail 3', id: 918858936
+mas 'Wunderlist', id: 410628904
+mas 'Alternote', id: 974971992
+mas 'Disk Diag', id: 672206759
+mas 'Marked', id: 448925439
+mas 'Pages', id: 409201541
+mas 'Calcbot', id: 931657367
+mas 'Navicat Essentials for PostgreSQL', id: 466725643
+mas 'Numbers', id: 409203825
+mas 'DaisyDisk', id: 411643860
+mas 'xScope', id: 889428659
