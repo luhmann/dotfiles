@@ -38,6 +38,7 @@ brew 'mas'
 brew 'maven'
 brew 'mongodb'
 brew 'ngrep'
+brew 'node'
 brew 'nvm'
 brew 'pcre'
 brew 'python'
@@ -48,6 +49,7 @@ brew 'tcpflow'
 brew 'the_silver_searcher'
 brew 'vim', args: ['with-override-system-vi']
 brew 'wget'
+brew 'yarn'
 brew 'youtube-dl'
 brew 'zsh'
 brew 'homebrew/dupes/grep'
@@ -56,24 +58,30 @@ cask 'alfred2'
 cask 'appdelete'
 cask 'arq'
 cask 'charles'
+cask 'dash'
 cask 'dropbox'
 cask 'evernote'
 cask 'firefox'
 cask 'firefoxdeveloperedition'
 cask 'fontprep'
 cask 'google-chrome'
+cask 'google-chrome-canary'
 cask 'handbrake'
 cask 'hazel'
+cask 'insomnia'
 cask 'istat-menus'
+cask 'iterm2'
 cask 'kaleidoscope'
 cask 'mplayerx'
 cask 'onyx'
 cask 'opera'
 cask 'sequel-pro'
+cask 'sketch'
 cask 'skitch'
 cask 'slack'
 cask 'spectacle'
 cask 'spotify'
+cask 'sublime-text'
 cask 'the-unarchiver'
 cask 'tower'
 cask 'transmit'
@@ -81,20 +89,23 @@ cask 'tunnelblick'
 cask 'versions'
 cask 'vlc'
 cask 'whatsize'
+mas 'Keynote', id: 409183694
 mas 'Kindle', id: 405399194
-mas 'Xcode', id: 497799835
 mas 'Glyphs Mini', id: 469036911
+mas 'Calcbot', id: 931657367
+mas 'Airmail 3', id: 918858936
+mas 'OmniGraffle', id: 711830901
+mas 'GarageBand', id: 682658836
+mas 'Navicat Essentials for PostgreSQL', id: 466725643
+mas 'Alternote', id: 974971992
+mas 'DaisyDisk', id: 411643860
 mas '1Password', id: 443987910
 mas 'Patterns', id: 429449079
-mas 'OmniGraffle', id: 711830901
-mas 'Airmail 3', id: 918858936
-mas 'Wunderlist', id: 410628904
-mas 'Alternote', id: 974971992
-mas 'Disk Diag', id: 672206759
-mas 'Marked', id: 448925439
-mas 'Pages', id: 409201541
-mas 'Calcbot', id: 931657367
-mas 'Navicat Essentials for PostgreSQL', id: 466725643
 mas 'Numbers', id: 409203825
-mas 'DaisyDisk', id: 411643860
 mas 'xScope', id: 889428659
+mas 'Xcode', id: 497799835
+mas 'Wunderlist', id: 410628904
+mas 'Pages', id: 409201541
+mas 'iMovie', id: 408981434
+mas 'Marked', id: 448925439
+mas 'Disk Diag', id: 672206759
