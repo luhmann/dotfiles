@@ -35,6 +35,8 @@ export PATH="$PATH:./node_modules/.bin"
 # Set JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
-# For Protractor: Fix ChromeDriver launch Chrome bug REMOVE THIS IF THE BUG GETS FIXED
-# also reconfigure iterm to set locale on startup
-export LC_NUMERIC="en_US.UTF-8"
+# do not add commands starting with a space to history
+setopt histignorespace
+
+# use python from homebrew
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
