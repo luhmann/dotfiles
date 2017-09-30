@@ -11,8 +11,5 @@
 # Install homebrew dependencies
 ./brew.bash
 
-# and now python
-./python.bash
-
 # now do the shells
 ./bootstrap.bash

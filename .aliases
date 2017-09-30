@@ -5,7 +5,7 @@ alias cask='cd /opt/homebrew-cask/Caskroom/'
 alias ccat='pygmentize -g'
 alias ddev='cd ~/Dev'
 alias ddot='cd ~/Dev/dotfiles'
-alias de='cd ~/Dev/epost'
+alias dct='cd ~/Dev/ct'
 alias dh='cd ~'
 alias fname='find . -iname'
 alias ga='git add --all .'
@@ -18,7 +18,7 @@ alias gurl='git config --get remote.origin.url'
 alias hosts='sudo vim /etc/hosts'
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-alias ll='ls -laoh'
+alias ll='exa -lag'
 alias o='open'
 alias oo='open .'
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
@@ -45,32 +45,8 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-function sshtc() {
-  ssh jdietrich@teamcity-bui-"$1".bis.epost-dev.de
-}
-
 function pcloud() {
     git diff > /Users/jfd/Library/Mobile\ Documents/com~apple~CloudDocs/patches/"$1".patch
-}
-
-function setproxy() {
-  npm config set proxy http://proxy.inf.epost-dev.de:8080
-  npm config set https-proxy http://proxy.inf.epost-dev.de:8080
-  export HTTP_PROXY=http://proxy.inf.epost-dev.de:8080
-  export HTTPS_PROXY=http://proxy.inf.epost-dev.de:8080
-  git config --global http.proxy http://proxy.inf.epost-dev.de:8080
-  git config --global https.proxy http://proxy.inf.epost-dev.de:8080
-#  export NO_PROXY="*.local, 169.254/16, localhost, *.epost-dev.de, *.clear-mail.de, 10.172.*, 127.0.0.1, 192.168.*" 
-}
-
-function unsetproxy() {
-  npm config rm proxy
-  npm config rm https-proxy
-  unset HTTP_PROXY
-  unset HTTPS_PROXY
-  unset NO_PROXY
-  git config --global --unset http.proxy
-  git config --global --unset https.proxy
 }
 
 function psg() {
@@ -81,6 +57,3 @@ function rh() {
     curl -s -D - "$1" -o /dev/null
 }
 
-function jira() {
-  open https://tasktracker.clear-mail.de/tracker/browse/"$1"
-}
