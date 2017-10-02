@@ -70,6 +70,9 @@ Plug 'lambdatoast/elm.vim'
 
 " Javascript Support
 Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'marijnh/tern_for_vim'
 Plug 'mxw/vim-jsx'
 Plug 'leshill/vim-json'
 Plug 'posva/vim-vue'
@@ -83,6 +86,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ajh17/Spacegray.vim'
 Plug 'j-tom/vim-old-hope'
+Plug 'ayu-theme/ayu-vim'
+Plug 'whatyouhide/vim-gotham'
 
 " Initialize Plug system
 call plug#end()
@@ -128,15 +133,16 @@ set cursorline
 
 " Theme and Styling 
 syntax on
-set t_Co=256
 
 " if (has("termguicolors"))
 "   set termguicolors
 " endif
 
-let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme old-hope 
- 
+set termguicolors     " enable true colors support
+let ayucolor="dark"   " for dark version of theme
+colorscheme gotham 
+
+
 let g:spacegray_underline_search = 1
 let g:spacegray_italicize_comments = 1
 
@@ -200,11 +206,6 @@ let g:UltiSnipsEditSplit="vertical" " If you want :UltiSnipsEdit to split your w
 " Vim-Test Configuration
 let test#strategy = "vimux"
 
-function! s:my_cr_function()
-  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-  " For no inserting <CR> key.
-  "return pumvisible() ? "\<C-y>" : "\<CR>"
-endfunction
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
@@ -252,6 +253,9 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 " Have JSX in JS
 let g:jsx_ext_required = 0
 
+" Ignore files in gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
@@ -264,9 +268,6 @@ inoremap <expr> <c-k> ("\<C-p>")
 " Recommended key-mappings.
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
@@ -304,3 +305,4 @@ map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
 
 " Advanced customization using autoload functions
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
+
