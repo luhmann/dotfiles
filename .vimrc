@@ -256,6 +256,18 @@ let g:jsx_ext_required = 0
 " Ignore files in gitignore
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
+" Configure prettier
+" max line length that prettier will wrap on
+let g:prettier#config#print_width = 120 
+
+" number of spaces per indentation level
+
+" single quotes over double quotes
+let g:prettier#config#single_quote = 'true'
+
+" none|es5|all
+let g:prettier#config#trailing_comma = 'es5'
+
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
@@ -305,4 +317,3 @@ map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
 
 " Advanced customization using autoload functions
 inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
-
