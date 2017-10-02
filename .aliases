@@ -21,7 +21,8 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias ll='exa -lag'
 alias o='open'
 alias oo='open .'
-alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias pubkey="more ~/.ssh/id_ed25519.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias pubkeyct="more ~/.ssh/id_ct.pub | pbcopy | echo '=> CT Public key copied to pasteboard.'"
 # alias ssh='~/.scripts/cssh.sh'
 alias v='vim'
 alias sudo='sudo '
