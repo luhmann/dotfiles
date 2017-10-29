@@ -14,7 +14,7 @@ zplug "plugins/yarn", from:oh-my-zsh
 zplug "caarlos0/open-pr", from:github
 zplug "denolfe/zsh-travis"
 zplug "modules/history", from:prezto
-zplug "plugins/git-it-on", from:oh-my-zsh
+zplug "peterhurford/git-it-on.zsh", from:oh-my-zsh
 
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
