@@ -1,0 +1,34 @@
+source $ZPLUG_HOME/init.zsh
+
+zplug "lukechilds/zsh-nvm"
+zplug "plugins/brew ", from:oh-my-zsh
+zplug "plugins/sublime", from:oh-my-zsh
+zplug "plugins/gitfast", from:oh-my-zsh
+zplug "plugins/autojump", from:oh-my-zsh
+zplug "plugins/git-extras", from:oh-my-zsh
+zplug "plugins/encode64", from:oh-my-zsh
+zplug "plugins/npm", from:oh-my-zsh
+zplug "plugins/osx", from:oh-my-zsh
+zplug "plugins/vi-mode", from:oh-my-zsh
+zplug "plugins/yarn", from:oh-my-zsh
+zplug "caarlos0/open-pr", from:github
+zplug "denolfe/zsh-travis"
+zplug "modules/history", from:prezto
+
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zdharma/fast-syntax-highlighting"
+
+zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load
