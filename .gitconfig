@@ -45,9 +45,6 @@
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 
-	opr = '!zsh -ic open-pr'
-	trav = '!zsh -ic git-trav'
-
 	count   = !git shortlog -sn
 	switch = !legit switch \"$@\"
 	branches = !legit branches
