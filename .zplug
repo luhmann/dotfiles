@@ -1,6 +1,6 @@
 source $ZPLUG_HOME/init.zsh
 
-zplug "lukechilds/zsh-nvm"
+# zplug "lukechilds/zsh-nvm"
 zplug "plugins/brew", from:oh-my-zsh
 zplug "plugins/sublime", from:oh-my-zsh
 zplug "plugins/gitfast", from:oh-my-zsh
@@ -11,10 +11,9 @@ zplug "plugins/npm", from:oh-my-zsh
 zplug "plugins/osx", from:oh-my-zsh
 zplug "plugins/vi-mode", from:oh-my-zsh
 zplug "plugins/yarn", from:oh-my-zsh
-zplug "caarlos0/open-pr", from:github
 zplug "denolfe/zsh-travis"
 zplug "modules/history", from:prezto
-zplug "peterhurford/git-it-on.zsh", from:oh-my-zsh
+zplug "peterhurford/git-it-on.zsh", from:github
 
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
