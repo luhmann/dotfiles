@@ -11,6 +11,7 @@ zplug "plugins/npm", from:oh-my-zsh
 zplug "plugins/osx", from:oh-my-zsh
 zplug "plugins/vi-mode", from:oh-my-zsh
 zplug "plugins/yarn", from:oh-my-zsh
+zplug "plugins/web-search", from:oh-my-zsh
 zplug "denolfe/zsh-travis"
 zplug "modules/history", from:prezto
 zplug "peterhurford/git-it-on.zsh", from:github
@@ -19,6 +20,8 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zdharma/fast-syntax-highlighting"
+zplug "b4b4r07/enhancd", use:init.sh
+zplug "hlissner/zsh-autopair", use:autopair.zsh
 
 zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 
