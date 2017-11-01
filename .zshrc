@@ -22,9 +22,15 @@ export PATH="$PATH:./node_modules/.bin"
 # Set JAVA_HOME
 # export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
-# do not add commands starting with a space to history
+# history setup
 setopt hist_ignore_space
 export HISTIGNORE="&:ls:ll:la:l.:pwd:exit:clear:clr:[bf]g:youtube-dl"
+
+# setup enhancd
+ENHANCD_FILTER=fzf
+export ENHANCD_FILTER
+
+export FZF_DEFAULT_OPTS='--multi --extended --reverse' 
 
 # use python from homebrew
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"
