@@ -34,3 +34,6 @@ export FZF_DEFAULT_OPTS='--multi --extended --reverse'
 
 # use python from homebrew
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# source env variables from a local file if it exists
+[ -f ~/.local_env ] && source ~/.local_env
