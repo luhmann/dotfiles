@@ -85,3 +85,7 @@ fkill() {
     echo $pid | xargs kill -${1:-9}
   fi
 }
+
+sha1 () {
+  echo -n "$1" | shasum -a 1 | awk '{print $1}'
+}
