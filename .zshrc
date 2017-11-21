@@ -32,6 +32,10 @@ export ENHANCD_FILTER
 
 export FZF_DEFAULT_OPTS='--multi --extended --reverse' 
 
+# enable nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
 # use python from homebrew
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
