@@ -95,3 +95,7 @@ fkill() {
 sha1 () {
   echo -n "$1" | shasum -a 1 | awk '{print $1}' | pbcopy
 }
+
+function com () { 
+    git commit -m "$*" 
+}
