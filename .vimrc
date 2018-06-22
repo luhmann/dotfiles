@@ -25,7 +25,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'gilsondev/searchtasks.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'skwp/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'severin-lemaignan/vim-minimap'
 
