@@ -15,6 +15,7 @@ zplug "plugins/web-search", from:oh-my-zsh
 zplug "denolfe/zsh-travis"
 zplug "modules/history", from:prezto
 zplug "peterhurford/git-it-on.zsh", from:github
+zplug 'wfxr/forgit', defer:1
 
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
