@@ -1,6 +1,3 @@
-"""""""""""""""""""""""""""""""""""""
-" Allan MacGregor Vimrc configuration 
-"""""""""""""""""""""""""""""""""""""
 set encoding=utf8
 
 """" START Plugin Configuration 
@@ -18,7 +15,8 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Utility
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-vinegar'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
 Plug 'junegunn/fzf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -28,6 +26,9 @@ Plug 'tpope/vim-repeat'
 Plug 'easymotion/vim-easymotion'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'severin-lemaignan/vim-minimap'
+Plug 'airblade/vim-gitgutter'
+Plug 'joom/vim-commentary'
+Plug 'chun-yang/auto-pairs'
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'kien/rainbow_parentheses.vim'
@@ -36,11 +37,8 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'tpope/vim-markdown'
 
 " Javascript Support
-Plug 'pangloss/vim-javascript'
-Plug 'jelera/vim-javascript-syntax'
-Plug 'mxw/vim-jsx'
-Plug 'leshill/vim-json'
-Plug 'leafgarland/typescript-vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'w0rp/ale'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
@@ -85,6 +83,27 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+
+" Set linebreak line
+set colorcolumn=120
+
+" Search behaviour
+" Ignore case when searching
+set ignorecase
+" Except when the search query contains a capital letter	
+set smartcase
+
+" Custom ALE linters
+:let g:ale_linters = {
+\ 'javascript': ['eslint']
+\}
+
+" Custom ALE fixers
+:let g:ale_fixers = {
+\	'javascript': ['prettier']
+\}
+
+let g:ale_fix_on_save = 1
 
 " Always display the status line
 set laststatus=2
@@ -161,10 +180,20 @@ let g:prettier#config#single_quote = 'true'
 " none|es5|all
 let g:prettier#config#trailing_comma = 'es5'
 
+" toggle indent guides
+let g:indent_guides_enable_on_vim_startup = 1 
+
+" Rainbow Parenthesis
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
-map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
 
 " Mapping selecting Mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
