@@ -60,6 +60,9 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
+# Recursively delete all node_modules
+alias nukenm="find . -name "node_modules" -exec rm -rf '{}' +"
+
 function pcloud() {
     git diff > /Users/jfd/Library/Mobile\ Documents/com~apple~CloudDocs/patches/"$1".patch
 }
