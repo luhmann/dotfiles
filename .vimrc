@@ -29,6 +29,7 @@ Plug 'severin-lemaignan/vim-minimap'
 Plug 'airblade/vim-gitgutter'
 Plug 'joom/vim-commentary'
 Plug 'chun-yang/auto-pairs'
+Plug 'tmhedberg/matchit'
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'kien/rainbow_parentheses.vim'
