@@ -82,7 +82,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 
 " Formatter
-"
+" <Leader>p
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
@@ -213,6 +213,10 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 " Configure prettier
 " max line length that prettier will wrap on
+
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+
 let g:prettier#config#print_width = 120 
 
 " number of spaces per indentation level
