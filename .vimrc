@@ -15,24 +15,64 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Utility
-" Plug 'scrooloose/nerdtree'
+" Minimal file-manager
 Plug 'tpope/vim-vinegar'
+
+" Fuzzy file finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
 Plug 'junegunn/fzf.vim'
+
+" Ctrl+p style file, mru, etc matching
 Plug 'ctrlpvim/ctrlp.vim'
+
+" Find todos, notes
 Plug 'gilsondev/searchtasks.vim'
+
+" change chars around stuff
 Plug 'tpope/vim-surround'
+
+" Use dot to repeat whatever you did last
 Plug 'tpope/vim-repeat'
+
+" jump to chars or words
+" Usage: <Leader><Leader>s<char>
 Plug 'easymotion/vim-easymotion'
+
+" Highlight indentation
+" Is switched always on by config below
 Plug 'nathanaelkane/vim-indent-guides'
+
+" Code minimap 
+" <Leader>mm
 Plug 'severin-lemaignan/vim-minimap'
+
+" Display git-changes in gutter
 Plug 'airblade/vim-gitgutter'
+
+" Comment lines
+" gcc - add block comment
 Plug 'joom/vim-commentary'
+
+" Also insert closing brackets when inserting opening bracket
+" <alt>p - toggle on/off
 Plug 'chun-yang/auto-pairs'
+
+" Allow matching html-tags with %
 Plug 'tmhedberg/matchit'
 
+" Multi Clipboard of previous yanks
+Plug 'maxbrunsfeld/vim-yankstack'
+
+" Respect editorconfig
 Plug 'editorconfig/editorconfig-vim'
+
+" Color brackets
 Plug 'kien/rainbow_parentheses.vim'
+
+" Expand increasing regions of text
+" + - increase region
+" _ - shrink region
+Plug 'terryma/vim-expand-region'
 
 " Markdown / Writing
 Plug 'tpope/vim-markdown'
@@ -40,6 +80,9 @@ Plug 'tpope/vim-markdown'
 " Javascript Support
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
+
+" Formatter
+"
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
