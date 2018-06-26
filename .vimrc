@@ -79,6 +79,7 @@ Plug 'tpope/vim-markdown'
 
 " Javascript Support
 Plug 'sheerun/vim-polyglot'
+Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'w0rp/ale'
 
 " Formatter
@@ -160,7 +161,8 @@ syntax on
 
 set termguicolors     " enable true colors support
 let ayucolor="dark"   " for dark version of theme
-colorscheme gotham 
+colorscheme ayu
+" colorscheme gotham 
 
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
@@ -240,7 +242,6 @@ au Syntax * RainbowParenthesesLoadBraces
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
-" map <C-n> :NERDTreeToggle<CR>
 
 " Mapping selecting Mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
