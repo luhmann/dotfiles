@@ -77,6 +77,12 @@ Plug 'terryma/vim-expand-region'
 " Markdown / Writing
 Plug 'tpope/vim-markdown'
 
+" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'epilande/vim-es2015-snippets'
+Plug 'epilande/vim-react-snippets'
+
 " Javascript Support
 Plug 'sheerun/vim-polyglot'
 Plug 'othree/javascript-libraries-syntax.vim'
