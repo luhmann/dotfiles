@@ -45,11 +45,11 @@ Plug 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 
 " Theme / Interface
+Plug 'ajh17/Spacegray.vim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'j-tom/vim-old-hope'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ajh17/Spacegray.vim'
-Plug 'j-tom/vim-old-hope'
-Plug 'ayu-theme/ayu-vim'
 Plug 'whatyouhide/vim-gotham'
 
 " Initialize Plug system
@@ -118,7 +118,6 @@ syntax on
 set termguicolors     " enable true colors support
 let ayucolor="dark"   " for dark version of theme
 colorscheme gotham 
-
 
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
