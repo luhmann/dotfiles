@@ -84,6 +84,10 @@ Plug 'epilande/vim-es2015-snippets'
 Plug 'epilande/vim-react-snippets'
 
 " Javascript Support
+" Usage: 
+"   - <Tab> to expand snippet
+"   - <c-j> jump forward
+"   - <c-k> jump backward
 Plug 'sheerun/vim-polyglot'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'w0rp/ale'
