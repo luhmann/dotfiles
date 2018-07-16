@@ -64,6 +64,11 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Recursively delete all node_modules
 alias nukenm="find . -name "node_modules" -exec rm -rf '{}' +"
 
+# set spectacle settings
+function setspectacle() {
+    cp "$HOME/spectacle.json" "$HOME/Library/Application Support/Spectacle/Shortcuts.json"
+}
+
 function pcloud() {
     git diff > /Users/jfd/Library/Mobile\ Documents/com~apple~CloudDocs/patches/"$1".patch
 }
