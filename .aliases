@@ -72,7 +72,6 @@ function setspectacle() {
 # delete entries containing string from history
 histrm() { 
     gsed -i "/$1/d" $HISTFILE
-    . ~/.zshrc
 }
 
 function pcloud() {
