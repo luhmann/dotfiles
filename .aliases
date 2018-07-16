@@ -70,7 +70,10 @@ function setspectacle() {
 }
 
 # delete entries containing string from history
-histrm() { LC_ALL=C sed -i "" '/$1/d' $HISTFILE }
+histrm() { 
+    gsed -i "/$1/d" $HISTFILE
+    . ~/.zshrc
+}
 
 function pcloud() {
     git diff > /Users/jfd/Library/Mobile\ Documents/com~apple~CloudDocs/patches/"$1".patch
