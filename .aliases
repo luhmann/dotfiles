@@ -69,6 +69,9 @@ function setspectacle() {
     cp "$HOME/spectacle.json" "$HOME/Library/Application Support/Spectacle/Shortcuts.json"
 }
 
+# delete entries containing string from history
+histrm() { LC_ALL=C sed -i "" '/$1/d' $HISTFILE }
+
 function pcloud() {
     git diff > /Users/jfd/Library/Mobile\ Documents/com~apple~CloudDocs/patches/"$1".patch
 }
