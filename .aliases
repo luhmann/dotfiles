@@ -34,10 +34,9 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 
-# CT yarn commands
-alias yt="yarn test:watch"
+# yarn commands
+alias yt="yarn test"
 alias ys="yarn start"
-alias yui="yarn uikit:start"
 
 alias urldecode='python -c "import sys, urllib as ul; \
     print ul.unquote_plus(sys.argv[1])"'
