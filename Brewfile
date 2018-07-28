@@ -36,7 +36,6 @@ brew "htop-osx"
 brew "openssl"
 brew "sqlite"
 brew "xz"
-brew "httpie"
 brew "iftop"
 brew "libtool"
 brew "imagemagick"
@@ -45,8 +44,6 @@ brew "oniguruma"
 brew "jq"
 brew "libksba"
 brew "libyaml"
-brew "lua"
-brew "mackup"
 brew "mas"
 brew "maven"
 brew "mongodb"
@@ -74,7 +71,6 @@ cask "alfred"
 cask "arq"
 cask "charles"
 cask "dash"
-cask "evernote"
 cask "firefox"
 cask "firefoxdeveloperedition"
 cask "github-desktop"
@@ -86,7 +82,6 @@ cask "istat-menus"
 cask "iterm2"
 cask "kaleidoscope"
 cask "macvim"
-cask "mplayerx"
 cask "numi"
 cask "onyx"
 cask "opera"
@@ -99,25 +94,18 @@ cask "spectacle"
 cask "spotify"
 cask "sublime-text"
 cask "the-unarchiver"
-cask "torbrowser"
 cask "tower"
-cask "transmit"
 cask "tunnelblick"
 cask "versions"
 cask "visual-studio-code"
 cask "vlc"
-cask "whatsize"
 mas "1Password", id: 443987910
 mas "Alternote", id: 974971992
 mas "DaisyDisk", id: 411643860
 mas "Disk Diag", id: 672206759
-mas "GarageBand", id: 682658836
 mas "Glyphs Mini", id: 469036911
-mas "iA Writer", id: 775737590
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
-mas "Marked", id: 448925439
 mas "Navicat Essentials for PostgreSQL", id: 466725643
 mas "Numbers", id: 409203825
 mas "OmniGraffle", id: 711830901
@@ -125,5 +113,4 @@ mas "Pages", id: 409201541
 mas "Patterns", id: 429449079
 mas "Spark", id: 1176895641
 mas "Wunderlist", id: 410628904
-mas "Xcode", id: 497799835
 mas "xScope", id: 889428659
