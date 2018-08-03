@@ -34,6 +34,9 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 
+# zalando aliases
+alias dz='cd ~/Dev/zalando'
+
 # yarn commands
 alias yt="yarn test"
 alias ys="yarn start"
