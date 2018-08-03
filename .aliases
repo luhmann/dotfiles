@@ -36,6 +36,7 @@ alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 
 # zalando aliases
 alias dz='cd ~/Dev/zalando'
+alias zj='TZ=UTC jest --config ./jest/config.json --watch'
 
 # yarn commands
 alias yt="yarn test"
