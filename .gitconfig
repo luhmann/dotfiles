@@ -110,4 +110,7 @@
 [mergetool]
 	prompt = false
 [diff]
-	tool = Kaleidoscope
+    tool = Kaleidoscope
+
+[includeIf "gitdir:dev/zalando/"]
+    path = /Users/jfd/Dev/zalando/.gitconfig
