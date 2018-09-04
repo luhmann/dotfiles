@@ -66,6 +66,7 @@ brew "zlib"
 brew "zsh"
 brew "zplug"
 brew "olleolleolle/adr-tools/adr_tools"
+brew "bat"
 
 cask "alfred"
 cask "arq"

@@ -33,6 +33,8 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;'
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
+# give cat some steriods
+alias cat='bat'
 
 # zalando aliases
 alias dz='cd ~/Dev/zalando'
