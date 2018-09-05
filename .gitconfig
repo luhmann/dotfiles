@@ -93,10 +93,14 @@
 
 [remote "origin"]
 	push = HEAD
+
 #[https]
 #	proxy = http://proxy.inf.epost-dev.de:8080
 #[http]
 # 	proxy = http://proxy.inf.epost-dev.de:8080
+[pager]
+    diff = diff-so-fancy | less --tabs=1,5 -RFX
+    show = diff-so-fancy | less --tabs=1,5 -RFX
 
 [push]
 	default = simple

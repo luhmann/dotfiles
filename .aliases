@@ -35,6 +35,8 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 # give cat some steriods
 alias cat='bat'
+# better du
+alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
 
 # zalando aliases
 alias dz='cd ~/Dev/zalando'
