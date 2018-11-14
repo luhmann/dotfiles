@@ -37,6 +37,7 @@ alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 alias cat='bat'
 # better du
 alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
+alias exclude='vim .git/info/exclude'
 
 # zalando aliases
 alias dz='cd ~/Dev/zalando'
