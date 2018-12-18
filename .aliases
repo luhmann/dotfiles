@@ -40,14 +40,14 @@ alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
 alias exclude='vim .git/info/exclude'
 
 #reload shell
-alias reload=exec $SHELL -l
+alias reload='exec $SHELL -l'
 
 # print separator
-alias sep=printf "%`tput cols`s" | tr ' ' '#'
+alias sep='printf "%`tput cols`s" | tr ' ' '#''
 
 # list all processes that currently connect to the internet
-alias listpi=lsof -P -i -n
-alias listpo=lsof -Pni4 | grep LISTEN | column -t
+alias listpi='lsof -P -i -n'
+alias listpo='lsof -Pni4 | grep LISTEN | column -t'
 
 # zalando aliases
 alias dz='cd ~/Dev/zalando'
