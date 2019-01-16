@@ -34,6 +34,9 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 # Set highlight color to green
 # defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
+# prevent dock-items from bouncing
+defaults write com.apple.dock no-bouncing -bool false
+
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
