@@ -1,69 +1,71 @@
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias cask='cd /opt/homebrew-cask/Caskroom/'
-alias ccat='pygmentize -g'
+# quick navigation
 alias ddev='cd ~/Dev'
 alias ddot='cd ~/Dev/dotfiles'
 alias dct='cd ~/Dev/ct'
-alias dod='cd ~/Dev/od'
 alias dh='cd ~'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# utils
 alias fname='find . -iname'
+alias genkey='openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=localhost" -keyout key.pem -out cert.pem'
+alias ccat='pygmentize -g'
+alias hosts='sudo vim /etc/hosts'
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+alias o='open'
+alias oo='open .'
+alias pubkey="more ~/.ssh/id_ed25519.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias v='vim'
+alias sudo='sudo '
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;'
+alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
+alias exclude='vim .git/info/exclude'
+alias sep="echo '------------------->'"
+
+# git shortcuts
 alias ga='git add --all .'
 alias gc='git commit'
 alias gco='git checkout'
 alias gp='git remote prune origin'
-alias trav='git-trav'
-alias genkey='openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=localhost" -keyout key.pem -out cert.pem'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gs='git status -sb'
 alias gurl='git config --get remote.origin.url'
-alias hosts='sudo vim /etc/hosts'
-alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-alias ll='exa -lag'
-alias o='open'
-alias oo='open .'
-alias pubkey="more ~/.ssh/id_ed25519.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
-alias pubkeyct="more ~/.ssh/id_ct.pub | pbcopy | echo '=> CT Public key copied to pasteboard.'"
-# alias ssh='~/.scripts/cssh.sh'
-alias v='vim'
-alias sudo='sudo '
-alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;'
-alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
-alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
-# give cat some steriods
+
+## jump to project in travis
+alias trav='git-trav'
+## jump to repo
+alias repo='gitit'
+
+## Switch git branches with fzf
+fbr() {
+  local branches branch
+  branches=$(git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format="%(refname:short)") &&
+  branch=$(echo "$branches" |
+           fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
+  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+}
+
+function com () { 
+    git commit -m "$*" 
+}
+
+# remap of native tools for better experience
 alias cat='bat'
-# better du
+alias ll='exa -lag'
 alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
-alias exclude='vim .git/info/exclude'
 
 #reload shell
 alias reload='exec $SHELL -l'
-
-# print separator
-alias sep='printf "%`tput cols`s" | tr ' ' '#''
 
 # list all processes that currently connect to the internet
 alias listpi='lsof -P -i -n'
 alias listpo='lsof -Pni4 | grep LISTEN | column -t'
 
-# zalando aliases
-alias dz='cd ~/Dev/zalando'
-alias zj='TZ=UTC jest --config ./jest/config.json --watch'
-
-# yarn commands
-alias yt="yarn test"
-alias ys="yarn start"
-
-alias urldecode='python -c "import sys, urllib as ul; \
-    print ul.unquote_plus(sys.argv[1])"'
-
-alias urlencode='python -c "import sys, urllib as ul; \
-    print ul.quote_plus(sys.argv[1])"'
-
-# View HTTP traffic
+# view HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
@@ -72,15 +74,12 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 # Finally, clear download history from quarantine. https://mths.be/bum
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
-# Hide/show all desktop icons (useful when presenting)
+# hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
-# Lock the screen (when going AFK)
+# lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-
-# Recursively delete all node_modules
-alias nukenm="find . -name "node_modules" -exec rm -rf '{}' +"
 
 # set spectacle settings
 function setspectacle() {
@@ -92,25 +91,14 @@ histrm() {
     gsed -i "/$1/d" $HISTFILE
 }
 
-function pcloud() {
-    git diff > /Users/jfd/Library/Mobile\ Documents/com~apple~CloudDocs/patches/"$1".patch
-}
+# encoding /decoding
+alias urldecode='python -c "import sys, urllib as ul; \
+    print ul.unquote_plus(sys.argv[1])"'
+alias urlencode='python -c "import sys, urllib as ul; \
+    print ul.quote_plus(sys.argv[1])"'
 
-function psg() {
-    ps auxww | grep --color=always "$1" | grep -v grep | collapse | cuts -f 2,11-
-}
-
-function rh() {
-    curl -s -D - "$1" -o /dev/null
-}
-
-# Switch git branches with fzf
-fbr() {
-  local branches branch
-  branches=$(git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format="%(refname:short)") &&
-  branch=$(echo "$branches" |
-           fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
-  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+sha1 () {
+  echo -n "$1" | shasum -a 1 | awk '{print $1}' | pbcopy
 }
 
 # Kill processes with fzf
@@ -124,10 +112,21 @@ fkill() {
   fi
 }
 
-sha1 () {
-  echo -n "$1" | shasum -a 1 | awk '{print $1}' | pbcopy
+# dev
+## yarn shortcuts 
+alias yt="yarn test"
+alias ys="yarn start"
+
+
+## recursively delete all node_modules
+alias nukenm="find . -name "node_modules" -exec rm -rf '{}' +"
+
+## backup patch of current changes to cloud
+function pcloud() {
+    git diff > /Users/jfd/Library/Mobile\ Documents/com~apple~CloudDocs/patches/"$1".patch
 }
 
-function com () { 
-    git commit -m "$*" 
+## show request-headers
+function rh() {
+    curl -s -D - "$1" -o /dev/null
 }
