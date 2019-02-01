@@ -18,23 +18,14 @@ export PATH="$PATH:./node_modules/.bin"
 
 # enable fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Set JAVA_HOME
-# export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export FZF_DEFAULT_OPTS='--multi --reverse' 
 
 # history setup
-setopt hist_ignore_space
 export HISTIGNORE="&:ls:ll:la:l.:pwd:exit:clear:clr:[bf]g:youtube-dl"
-
-# setup enhancd
-ENHANCD_FILTER=fzf
-export ENHANCD_FILTER
-
-export FZF_DEFAULT_OPTS='--multi --extended --reverse' 
 
 # enable nvm
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 
 # use python from homebrew
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"

@@ -1,29 +1,53 @@
 source $ZPLUG_HOME/init.zsh
 
-# zplug "lukechilds/zsh-nvm"
-zplug "plugins/brew", from:oh-my-zsh
+# adds commands for starting sublime for cli
+# see: https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sublime
 zplug "plugins/sublime", from:oh-my-zsh
-zplug "plugins/gitfast", from:oh-my-zsh
+
+# adds git aliases
+# currently disabled custom-ones work better
+# zplug "plugins/gitfast", from:oh-my-zsh
+
+# adds the "j"-command for faster navigation
 zplug "plugins/autojump", from:oh-my-zsh
+
+# adds completion for the commands added by "git-extras"
 zplug "plugins/git-extras", from:oh-my-zsh
+
+# adds encode64/decode64 commands
 zplug "plugins/encode64", from:oh-my-zsh
-zplug "plugins/npm", from:oh-my-zsh
-zplug "plugins/osx", from:oh-my-zsh
+
+# adds vi-like functionality to zsh
 zplug "plugins/vi-mode", from:oh-my-zsh
-zplug "plugins/yarn", from:oh-my-zsh
-zplug "plugins/web-search", from:oh-my-zsh
+
+# adds git-trav command to open the travis build-page
 zplug "denolfe/zsh-travis"
+
+# adds some good defaults for history recording
 zplug "modules/history", from:prezto
+
+# adds the "gitit"-commands to jump to github-repo from cli
 zplug "peterhurford/git-it-on.zsh", from:github
+
+# adds interactive tools (adding, ignoring...) for git
 zplug 'wfxr/forgit', defer:1
 
+# shows autosuggestions for command-completions
 zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zdharma/fast-syntax-highlighting"
-zplug "b4b4r07/enhancd", use:init.sh
-zplug "hlissner/zsh-autopair", use:autopair.zsh
 
+# installs additional completions
+zplug "zsh-users/zsh-completions"
+
+# enable syntax highlighting for zsh-commands
+zplug "zdharma/fast-syntax-highlighting"
+
+# type a command from history and cycle through matches with up/down
+zplug "zsh-users/zsh-history-substring-search"
+
+# an enhanced cd command - never used it, interferes with fzf
+# zplug "b4b4r07/enhancd", use:init.sh
+
+# command-line theme
 zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 
 # Install plugins if there are plugins that have not been installed
