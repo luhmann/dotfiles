@@ -17,6 +17,7 @@ brew "automake"
 brew "gdbm"
 # SSL/TLS cryptography library
 brew "openssl"
+brew asdf
 # Library for command-line editing
 brew "readline"
 # Command-line interface for SQLite
