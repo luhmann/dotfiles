@@ -34,7 +34,7 @@ zsh_wifi_signal(){
                 [[ $speed -gt 100 ]] && color='%F{black}'
                 [[ $speed -lt 50 ]] && color='%F{red}'
 
-                echo -n "%{$color%}$speed Mbps%{%f%}" # removed char not in my PowerLine font
+                echo -n "%{$color%}$speed Mbps%{%f%}" 
         fi
 }
 
