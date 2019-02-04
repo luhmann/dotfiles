@@ -170,7 +170,8 @@ function com () {
 alias cat='bat'
 alias ll='exa -lag'
 alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
-alias find='fd'
+# commented because it breaks other tools that use find
+# alias find='fd'
 
 #reload shell
 alias reload='exec $SHELL -l'
