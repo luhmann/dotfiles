@@ -5,7 +5,8 @@ These are my dotfiles. Take what you want at your own risk.
 ## Installation
 
 ```bash
-$ bash install.bash
+$ curl -O https://raw.githubusercontent.com/luhmann/dotfiles/master/run.bash
+$ bash run.bash
 ```
 
 ## Features
