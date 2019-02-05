@@ -28,6 +28,8 @@ function setupHammerspoon() {
   # open -a Hammerspoon - open hammerspoon if menu-item and dock-item are disabled
   # cmd + , -- open preferences
   defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.hammerspoon/init.lua"
+  defaults write org.hammerspoon.Hammerspoon MJShowDockIconKey 0
+  defaults write org.hammerspoon.Hammerspoon MJShowMenuIconKey 0
 }
 
 installFonts
