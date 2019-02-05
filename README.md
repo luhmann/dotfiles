@@ -1,6 +1,6 @@
 # 🦙 luhmann leverages lavish dotfiles
 
-<img src="./doc/logo.svg" alt="Logo" width="100%"/>
+<img src="./doc/logo.png" alt="Logo"/>
 
 These are my dotfiles. Take what you want at your own risk.
 
