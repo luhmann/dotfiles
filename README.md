@@ -1,4 +1,6 @@
-# 💠 dotfiles
+# 🦙 luhmann leverages lavish dotfiles
+
+<img src="./doc/logo.svg" alt="Logo"/>
 
 These are my dotfiles. Take what you want at your own risk.
 

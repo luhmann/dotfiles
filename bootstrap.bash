@@ -21,7 +21,7 @@ fi
 
 printf "# Syncing to home folder...\n"
 function doSync() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.bash" --exclude "Brewfile" --exclude "com.googlecode.iterm2.plist" --exclude "Caskfile" --exclude "z*" --exclude "*.md" --exclude "*.txt" -av . ~
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.bash" --exclude "Brewfile" --exlude "doc" --exclude "com.googlecode.iterm2.plist" --exclude "Caskfile" --exclude "z*" --exclude "*.md" --exclude "*.txt" -av . ~
 }
 
 
