@@ -4,40 +4,39 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "joshuaclayton/formulae"
-tap "netlify/netlifyctl"
 tap "olleolleolle/adr-tools"
-cask "java"
 # Automatic configure script builder
 brew "autoconf"
-# Shell extension to jump to frequently used directories
-brew "autojump"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# GNU database manager
-brew "gdbm"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Generic library support script
+brew "libtool"
+# YAML Parser
+brew "libyaml"
 # SSL/TLS cryptography library
 brew "openssl"
-brew asdf
 # Library for command-line editing
 brew "readline"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
+# Shell extension to jump to frequently used directories
+brew "autojump"
+# GNU database manager
+brew "gdbm"
 # Command-line interface for SQLite
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Interpreted, interactive, object-oriented programming language
 brew "python"
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Collection of portable C++ source libraries
 brew "boost"
-# Utility that creates projects from templates
-brew "cookiecutter"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Modern replacement for 'ls'
@@ -52,6 +51,10 @@ brew "x264"
 brew "xvid"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Platform built on V8 to build network applications
+brew "node"
+# Command-line JSON processing tool
+brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # The GNU Compiler Collection
@@ -68,50 +71,34 @@ brew "git-extras"
 brew "gnu-sed"
 # GNU version of the tar archiving utility
 brew "gnu-tar"
-# Open-source build automation tool based on the Groovy and Kotlin DSL
-brew "gradle"
+# X.509 and CMS library
+brew "libksba"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # GNU grep, egrep and fgrep
 brew "grep"
 # Improved top (interactive process viewer)
 brew "htop"
 # Display an interface's bandwidth usage
 brew "iftop"
-# Generic library support script
-brew "libtool"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # File system benchmark tool
 brew "iozone"
-# Regular expressions library
-brew "oniguruma"
-# Lightweight and flexible command-line JSON processor
-brew "jq"
-# X.509 and CMS library
-brew "libksba"
-# YAML Parser
-brew "libyaml"
 # Mac App Store command-line interface
 brew "mas"
 # Java-based project management
 brew "maven"
-# Intercept, modify, replay, save HTTP/S traffic
-brew "mitmproxy"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # High-performance, schema-free, document-oriented database
 brew "mongodb"
 # NCurses Disk Usage
 brew "ncdu"
-# Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
 # Network grep
 brew "ngrep"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
-brew "node"
-# Manage multiple Node.js versions
-brew "nvm"
 # Manage compile and link flags for libraries
 brew "pkg-config"
 # Object-relational database system
@@ -152,8 +139,6 @@ brew "zplug"
 brew "zsh"
 # A command line tool to identify unused code.
 brew "joshuaclayton/formulae/unused"
-# CLI to interact with netlify.com
-brew "netlify/netlifyctl/netlifyctl"
 # A command-line tool for working with Architecture Decision Records (ADRs).
 brew "olleolleolle/adr-tools/adr_tools"
 cask "alfred"
@@ -162,14 +147,12 @@ cask "charles"
 cask "dash"
 cask "firefox"
 cask "google-chrome-canary"
-cask "google-hangouts"
-cask "hipchat"
+cask "hammerspoon"
 cask "iina"
 cask "insomnia"
 cask "istat-menus"
 cask "iterm2"
 cask "kaleidoscope"
-cask "kap"
 cask "macvim"
 cask "numi"
 cask "odrive"
@@ -178,9 +161,7 @@ cask "opera"
 cask "safari-technology-preview"
 cask "sequel-pro"
 cask "sketch"
-cask "skitch"
 cask "slack"
-cask "spectacle"
 cask "spotify"
 cask "sublime-text"
 cask "the-unarchiver"
@@ -189,16 +170,12 @@ cask "tunnelblick"
 cask "versions"
 cask "visual-studio-code"
 cask "vlc"
-mas "Alternote", id: 974971992
 mas "Bear", id: 1091189122
 mas "DaisyDisk", id: 411643860
 mas "Disk Diag", id: 672206759
-mas "GarageBand", id: 682658836
-mas "GIF Brewery 3", id: 1081413713
 mas "Glyphs Mini", id: 469036911
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
-mas "Monosnap", id: 540348655
 mas "Navicat Essentials for PostgreSQL", id: 466725643
 mas "Noizio", id: 928871589
 mas "Numbers", id: 409203825
