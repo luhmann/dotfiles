@@ -21,14 +21,9 @@ fi
 
 printf "# Syncing to home folder...\n"
 function doSync() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.bash" --exclude "Brewfile" --exclude "Caskfile" --exclude "z*" --exclude "*.md" --exclude "*.txt" -av . ~
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.bash" --exclude "Brewfile" --exclude "com.googlecode.iterm2.plist" --exclude "Caskfile" --exclude "z*" --exclude "*.md" --exclude "*.txt" -av . ~
 }
 
-function installFonts() {
-  cd ~/Library/Fonts && { curl -OL 'https://raw.githubusercontent.com/powerline/fonts/master/RobotoMono/Roboto%20Mono%20for%20Powerline.ttf' ; }
-  cd ~/Library/Fonts && { curl -OL 'https://raw.githubusercontent.com/enricobacis/master/osx-fonts/Library/Fonts/Knack%20Regular%20Nerd%20Font%20Complete.ttf' ; }
-  cd ~/Library/Fonts && { curl -OL 'https://raw.githubusercontent.com/powerline/master/Inconsolata-g/Inconsolata-g%20for%20Powerline.otf' ; }
-}
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doSync

@@ -11,5 +11,8 @@
 # Install homebrew dependencies
 ./brew.bash
 
+# run one-time opertions
+bash ./setup.bash
+
 # now do the shells
 ./bootstrap.bash
