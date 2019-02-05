@@ -26,8 +26,8 @@ alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 alias exclude='vim .git/info/exclude'
 alias sep="echo '------------------->'"
 
-weather() { 
-  curl -4 wttr.in/${1:-berlin} 
+weather() {
+  curl -4 wttr.in/${1:-berlin}
 }
 
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
@@ -166,8 +166,8 @@ fshow() {
 FZF-EOF"
 }
 
-function com () { 
-    git commit -m "$*" 
+function com () {
+    git commit -m "$*"
 }
 
 # remap of native tools for better experience
@@ -200,13 +200,8 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-# set spectacle settings
-function setspectacle() {
-    cp "$HOME/spectacle.json" "$HOME/Library/Application Support/Spectacle/Shortcuts.json"
-}
-
 # delete entries containing string from history
-histrm() { 
+histrm() {
     gsed -i "/$1/d" $HISTFILE
 }
 
@@ -222,21 +217,21 @@ sha1 () {
 
 # fkill - kill processes - list only the ones you can kill. Modified the earlier script.
 fkill() {
-    local pid 
+    local pid
     if [ "$UID" != "0" ]; then
         pid=$(ps -f -u $UID | sed 1d | fzf -m | awk '{print $2}')
     else
         pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
-    fi  
+    fi
 
     if [ "x$pid" != "x" ]
     then
         echo $pid | xargs kill -${1:-9}
-    fi  
+    fi
 }
 
 # dev
-## yarn shortcuts 
+## yarn shortcuts
 alias yt="yarn test"
 alias ys="yarn start"
 

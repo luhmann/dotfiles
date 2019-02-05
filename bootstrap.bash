@@ -21,13 +21,11 @@ fi
 
 printf "# Syncing to home folder...\n"
 function doSync() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.bash" --exclude "Brewfile" --exlude "doc" --exclude "com.googlecode.iterm2.plist" --exclude "Caskfile" --exclude "z*" --exclude "*.md" --exclude "*.txt" -av . ~
+	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "*.bash" --exclude "Brewfile" --exclude "etc" --exclude "com.googlecode.iterm2.plist" --exclude "Caskfile" --exclude "z*" --exclude "*.md" --exclude "*.txt" -av . ~
 }
-
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doSync
-  installFonts
 else
 	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
 	echo
