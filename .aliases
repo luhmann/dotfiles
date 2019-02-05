@@ -26,6 +26,10 @@ alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 alias exclude='vim .git/info/exclude'
 alias sep="echo '------------------->'"
 
+weather() { 
+  curl -4 wttr.in/${1:-berlin} 
+}
+
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
 #   - Bypass fuzzy finder if there's only one match (--select-1)
 #   - Exit if there's no match (--exit-0)
