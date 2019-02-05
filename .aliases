@@ -135,6 +135,7 @@ bip() {
 alias ga='git add --all .'
 alias gc='git commit'
 alias gco='git checkout'
+alias gam='git commit --amend --no-edit'
 alias gp='git remote prune origin'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gs='git status -sb'
