@@ -77,6 +77,7 @@ brew "libksba"
 brew "gnupg"
 # GNU grep, egrep and fgrep
 brew "grep"
+brew install "hub"
 # Improved top (interactive process viewer)
 brew "htop"
 # Display an interface's bandwidth usage

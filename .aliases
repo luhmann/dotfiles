@@ -145,6 +145,10 @@ alias gurl='git config --get remote.origin.url'
 alias trav='git-trav'
 ## jump to repo
 alias repo='gitit'
+## work with issues
+alias issues="hub issue"
+## work with prs
+alias pr="hub pr list"
 
 ## Switch git branches with fzf
 fbr() {
