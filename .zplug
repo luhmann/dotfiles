@@ -26,8 +26,8 @@ zplug "denolfe/zsh-travis"
 # adds some good defaults for history recording
 zplug "modules/history", from:prezto
 
-# adds the "gitit"-commands to jump to github-repo from cli
-zplug "peterhurford/git-it-on.zsh", from:github
+# adds the "gitit"-commands to jump to github-repo from cli - replaced for now by "hub"
+# zplug "peterhurford/git-it-on.zsh", from:github
 
 # adds interactive tools (adding, ignoring...) for git
 zplug 'wfxr/forgit', defer:1

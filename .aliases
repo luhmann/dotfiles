@@ -144,7 +144,7 @@ alias gurl='git config --get remote.origin.url'
 ## jump to project in travis
 alias trav='git-trav'
 ## jump to repo
-alias repo='gitit'
+alias repo='hub browse'
 ## work with issues
 alias issues="hub issue"
 ## work with prs
