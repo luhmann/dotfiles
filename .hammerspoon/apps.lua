@@ -19,8 +19,9 @@ hs.hotkey.bind(mash, "p", function() toggleApplication("System Preferences") end
 hs.hotkey.bind(mash, "s", function() toggleApplication("Spotify") end)
 hs.hotkey.bind(mash, "i", function() toggleApplication("iTerm2") end)
 hs.hotkey.bind(mash, "c", function() toggleApplication("Code") end)
+hs.hotkey.bind(mash, "b", function() toggleApplication("Bear") end)
 
--- application
+-- spotify
 hs.hotkey.bind(calt, "n", function() hs.spotify.next() end)
 hs.hotkey.bind(calt, "p", function() hs.spotify.previous() end)
 hs.hotkey.bind(calt, "s", function() hs.spotify.playpause() end)
