@@ -148,7 +148,8 @@ alias repo='hub browse'
 ## work with issues
 alias issues="hub issue"
 ## work with prs
-alias pr="hub pr list"
+alias prs="hub pr list"
+alias pr="hub pull-request"
 
 ## Switch git branches with fzf
 fbr() {
@@ -240,6 +241,9 @@ fkill() {
 alias yt="yarn test"
 alias ys="yarn start"
 
+## kill node processes
+
+alias kn="killall node"
 
 ## recursively delete all node_modules
 alias nukenm="find . -name "node_modules" -exec rm -rf '{}' +"
