@@ -150,6 +150,10 @@ alias issues="hub issue"
 ## work with prs
 alias prs="hub pr list"
 alias pr="hub pull-request"
+## me
+alias me="open 'https://github.com/luhmann'"
+alias repos="open 'https://github.com/luhmann?tab=repositories'"
+alias stars="open 'https://github.com/luhmann?tab=stars'"
 
 ## Switch git branches with fzf
 fbr() {
@@ -183,7 +187,7 @@ alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
 # commented because it breaks other tools that use find
 # alias find='fd'
 
-#reload shell
+# reload shell
 alias reload='exec $SHELL -l'
 
 # list all processes that currently connect to the internet
@@ -242,7 +246,6 @@ alias yt="yarn test"
 alias ys="yarn start"
 
 ## kill node processes
-
 alias kn="killall node"
 
 ## recursively delete all node_modules
