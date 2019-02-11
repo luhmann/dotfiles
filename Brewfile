@@ -130,6 +130,7 @@ brew "wget"
 brew "yank"
 # JavaScript package manager
 brew "yarn"
+brew "yq"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # General-purpose lossless data-compression library
