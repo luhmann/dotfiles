@@ -26,6 +26,11 @@ alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 alias exclude='vim .git/info/exclude'
 alias sep="echo '------------------->'"
 
+# get some help on nearly anything
+cheat() {
+  curl cheat.sh/$1
+}
+
 weather() {
   curl -4 wttr.in/${1:-berlin}
 }
