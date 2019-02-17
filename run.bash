@@ -16,7 +16,7 @@ PROD=$(softwareupdate -l |
   head -n 1 | awk -F"*" '{print $2}' |
   sed -e 's/^ *//' |
   tr -d '\n')
-softwareupdate -i "$PROD" -v
+softwareupdate -i "$PROD" --verbose
 
 # create dev-folder
 mkdir ~/dev
