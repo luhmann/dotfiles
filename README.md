@@ -1,6 +1,6 @@
 # 🦙 luhmann leverages lavish dotfiles
 
-<img src="./doc/logo.png" alt="Logo"/>
+<img src="./etc/logo.png" alt="Logo"/>
 
 These are my dotfiles. Take what you want at your own risk.
 
