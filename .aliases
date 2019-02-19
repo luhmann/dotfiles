@@ -25,6 +25,7 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 alias exclude='vim .git/info/exclude'
 alias sep="echo '------------------->'"
+alias todo="ultralist"
 
 # get some help on nearly anything
 cheat() {

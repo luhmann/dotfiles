@@ -139,6 +139,8 @@ brew "zlib"
 brew "zplug"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Todolist app
+brew "ultralist"
 # A command line tool to identify unused code.
 brew "joshuaclayton/formulae/unused"
 # A command-line tool for working with Architecture Decision Records (ADRs).
