@@ -17,6 +17,6 @@ hs.hotkey.bind(mash, "l", function() hs.caffeinate.sleepScreen(); end)
 -- defeat paste-blocks
 hs.hotkey.bind({"cmd", "alt"}, "v", function() hs.eventtap.keyStrokes(hs.pasteboard.getContents()) end)
 -- mute
-hs.hotkey.bind(calt, "o", volume.mute)
+hs.hotkey.bind(calt, "m", volume.mute)
 
 hs.alert("Hammerspoon config loaded")
