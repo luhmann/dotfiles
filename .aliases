@@ -1,8 +1,8 @@
 # quick navigation
 alias ddev='cd ~/Dev'
 alias ddot='cd ~/Dev/dotfiles'
-alias dct='cd ~/Dev/ct'
 alias dh='cd ~'
+alias dw='cd ~/Dev/wps'
 
 alias ..='cd ..'
 alias ...='cd ../..'
