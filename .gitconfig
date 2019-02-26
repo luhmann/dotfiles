@@ -90,5 +90,5 @@
 [diff]
     tool = Kaleidoscope
 
-[includeIf "gitdir:dev/zalando/"]
-    path = /Users/jfd/Dev/zalando/.gitconfig
+[includeIf "gitdir:dev/wps/"]
+  path = /Users/jfd/dev/wps/.gitconfig
