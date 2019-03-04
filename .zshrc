@@ -62,10 +62,10 @@ export HISTIGNORE="&:ls:ll:la:l.:pwd:exit:clear:clr:[bf]g:youtube-dl"
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jfd/y/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jfd/y/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/jfd/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jfd/y/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/jfd/y/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jfd/y/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/jfd/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jfd/y/google-cloud-sdk/completion.zsh.inc'; fi
 
 # source env variables from a local file if it exists
 [ -f ~/.local_env ] && source ~/.local_env
