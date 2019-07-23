@@ -39,7 +39,7 @@ zsh_wifi_signal(){
 }
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm custom_wifi_signal vi_mode)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status node_version custom_wifi_signal vi_mode)
 
 # Hook up aliases
 source ~/.aliases
