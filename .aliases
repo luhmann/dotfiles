@@ -267,6 +267,14 @@ function dlogs() {
   docker-compose -f /Users/jfd/Dev/sixt/util-docker/docker-compose-cts.yml logs -t -f $1
 }
 
+function drestart() {
+  docker-compose -f /Users/jfd/Dev/sixt/util-docker/docker-compose-cts.yml restart
+}
+
+function dps() {
+  docker-compose -f /Users/jfd/Dev/sixt/util-docker/docker-compose-cts.yml ps
+}
+
 function sindex() {
   curl -i -X POST http://localhost:8082/api/system-messageprovider/index/tier/update -H 'Content-Type: application/json' -d '{ "tierId": 4 }'
 }
