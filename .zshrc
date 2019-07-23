@@ -39,7 +39,7 @@ zsh_wifi_signal(){
 }
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status custom_asdf_node_version custom_wifi_signal vi_mode)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm custom_wifi_signal vi_mode)
 
 # Hook up aliases
 source ~/.aliases
@@ -55,8 +55,8 @@ export FZF_DEFAULT_OPTS='--multi --reverse'
 export HISTIGNORE="&:ls:ll:la:l.:pwd:exit:clear:clr:[bf]g:youtube-dl"
 
 # enable nvm - disabled in favor of asdf
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 
 # use python from homebrew
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"
