@@ -186,6 +186,14 @@ function com () {
     git commit -m "$*"
 }
 
+function gitstash() {
+    git stash push --include-untracked -m "zsh_stash_name_$1"
+}
+
+function gitstashapply() {
+    git stash apply $(git stash list | grep "zsh_stash_name_$1" | cut -d: -f1)
+}
+
 # remap of native tools for better experience
 alias cat='bat'
 alias ll='exa -lag'
