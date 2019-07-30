@@ -271,6 +271,8 @@ function rh() {
 }
 
 # sixt
+alias sprs="open https://bitbucket.org/online-retail/web-newcar/pull-requests/"
+
 function dlogs() {
   docker-compose -f /Users/jfd/Dev/sixt/util-docker/docker-compose-cts.yml logs -t -f $1
 }
