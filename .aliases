@@ -274,7 +274,7 @@ function rh() {
 alias sprs="open https://bitbucket.org/online-retail/web-newcar/pull-requests/"
 
 function dlogs() {
-  docker-compose -f /Users/jfd/Dev/sixt/util-docker/docker-compose-cts.yml logs -t -f $1
+  docker-compose -f /Users/jfd/Dev/sixt/util-docker/docker-compose-cts.yml logs -t --tail=1000 -f $1
 }
 
 function drestart() {
@@ -286,5 +286,5 @@ function dps() {
 }
 
 function sindex() {
-  curl -i -X POST http://localhost:8082/api/system-messageprovider/index/tier/update -H 'Content-Type: application/json' -d '{ "tierId": 4 }'
+  curl -X PATCH "http://localhost:8082/api/system-vehiclesearch/index/4/vehicles" -H "accept: */*"
 }
