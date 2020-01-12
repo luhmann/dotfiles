@@ -270,6 +270,16 @@ function rh() {
     curl -s -D - "$1" -o /dev/null
 }
 
+function node-project {
+  git init
+  npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
+  npx gitignore node
+  npx covgen "$(npm get init.author.email)"
+  npm init -y
+  git add -A
+  git commit -m "Initial commit"
+}
+
 # sixt
 alias sprs="open https://bitbucket.org/online-retail/web-newcar/pull-requests/"
 
