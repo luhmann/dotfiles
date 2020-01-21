@@ -270,6 +270,10 @@ function rh() {
     curl -s -D - "$1" -o /dev/null
 }
 
+function perf {
+  curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
+}
+
 # sixt
 alias sprs="open https://bitbucket.org/online-retail/web-newcar/pull-requests/"
 
