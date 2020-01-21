@@ -2,7 +2,6 @@
 alias ddev='cd ~/Dev'
 alias ddot='cd ~/Dev/dotfiles'
 alias dh='cd ~'
-alias dw='cd ~/Dev/wps'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -272,6 +271,16 @@ function rh() {
 
 function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
+}
+
+function node-project {
+  git init
+  npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
+  npx gitignore node
+  npx covgen "$(npm get init.author.email)"
+  npm init -y
+  git add -A
+  git commit -m "Initial commit"
 }
 
 # sixt
