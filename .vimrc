@@ -1,6 +1,6 @@
 set encoding=utf8
 
-"""" START Plugin Configuration 
+"""" START Plugin Configuration
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -19,7 +19,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-vinegar'
 
 " Fuzzy file finder
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " Ctrl+p style file, mru, etc matching
@@ -42,7 +42,7 @@ Plug 'easymotion/vim-easymotion'
 " Is switched always on by config below
 Plug 'nathanaelkane/vim-indent-guides'
 
-" Code minimap 
+" Code minimap
 " <Leader>mm
 Plug 'severin-lemaignan/vim-minimap'
 
@@ -77,14 +77,8 @@ Plug 'terryma/vim-expand-region'
 " Markdown / Writing
 Plug 'tpope/vim-markdown'
 
-" Snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'epilande/vim-es2015-snippets'
-Plug 'epilande/vim-react-snippets'
-
 " Javascript Support
-" Usage: 
+" Usage:
 "   - <Tab> to expand snippet
 "   - <c-j> jump forward
 "   - <c-k> jump backward
@@ -114,7 +108,7 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q
   \| endif
 
-"""" END Plugin Configuration 
+"""" END Plugin Configuration
 
 """""""""""""""""""""""""""""""""""""
 " Configuration Section
@@ -145,7 +139,7 @@ set colorcolumn=120
 " Search behaviour
 " Ignore case when searching
 set ignorecase
-" Except when the search query contains a capital letter	
+" Except when the search query contains a capital letter
 set smartcase
 
 " Custom ALE linters
@@ -166,20 +160,20 @@ set laststatus=2
 " Enable highlighting of the current line
 set cursorline
 
-" Theme and Styling 
+" Theme and Styling
 syntax on
 
 set termguicolors     " enable true colors support
 let ayucolor="dark"   " for dark version of theme
 colorscheme ayu
-" colorscheme gotham 
+" colorscheme gotham
 
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1 
+let g:airline_powerline_fonts = 1
 let g:airline_theme='hybrid'
 let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1 
+let g:hybrid_reduced_contrast = 1
 
 " Fzf Configuration
 " This is the default extra key bindings
@@ -229,7 +223,7 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 
-let g:prettier#config#print_width = 120 
+let g:prettier#config#print_width = 120
 
 " number of spaces per indentation level
 
@@ -240,7 +234,7 @@ let g:prettier#config#single_quote = 'true'
 let g:prettier#config#trailing_comma = 'es5'
 
 " toggle indent guides
-let g:indent_guides_enable_on_vim_startup = 1 
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Rainbow Parenthesis
 au VimEnter * RainbowParenthesesToggle
@@ -259,7 +253,7 @@ xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
 
 " Shortcuts
-nnoremap <Leader>o :Files<CR> 
+nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>O :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 
