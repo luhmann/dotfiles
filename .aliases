@@ -273,7 +273,19 @@ function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
 }
 
-function node-project {
+function curl_time() {
+    curl -w "\
+   namelookup:  %{time_namelookup}s\n\
+      connect:  %{time_connect}s\n\
+   appconnect:  %{time_appconnect}s\n\
+  pretransfer:  %{time_pretransfer}s\n\
+     redirect:  %{time_redirect}s\n\
+starttransfer:  %{time_starttransfer}s\n\
+-------------------------\n\
+        total:  %{time_total}s\n" "$@"
+}
+
+function node-project() {
   git init
   npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
   npx gitignore node
@@ -281,6 +293,15 @@ function node-project {
   npm init -y
   git add -A
   git commit -m "Initial commit"
+}
+
+
+function build_dockerfile() {
+  docker build . -t $1 -f ./Dockerfile
+}
+
+function run_dockerfile() {
+  docker run -d $1
 }
 
 # sixt
