@@ -247,6 +247,9 @@ au Syntax * RainbowParenthesesLoadBraces
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
 
+" shortcuts
+nnoremap Y y$
+
 " Mapping selecting Mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
