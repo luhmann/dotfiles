@@ -308,15 +308,15 @@ function run_dockerfile() {
 alias sprs="open https://bitbucket.org/online-retail/web-newcar/pull-requests/"
 
 function dlogs() {
-  docker-compose -f /Users/jfd/Dev/sixt/util-docker/docker-compose-cts.yml logs -t --tail=1000 -f $1
+  docker-compose -f /Users/jfd/Dev/sixt/orit.bp.local-docker-environments/docker-compose-cts.yml logs -t --tail=1000 -f $1
 }
 
 function drestart() {
-  docker-compose -f /Users/jfd/Dev/sixt/util-docker/docker-compose-cts.yml restart
+  docker-compose -f /Users/jfd/Dev/sixt/orit.bp.local-docker-environments/docker-compose-cts.yml restart
 }
 
 function dps() {
-  docker-compose -f /Users/jfd/Dev/sixt/util-docker/docker-compose-cts.yml ps
+  docker-compose -f /Users/jfd/Dev/sixt/orit.bp.local-docker-environments/docker-compose-cts.yml ps
 }
 
 function sindex() {
