@@ -92,3 +92,54 @@
 
 [includeIf "gitdir:dev/sixt/"]
   path = /Users/jfd/dev/sixt/.gitconfig
+[pull]
+	rebase = false
+    "product": "LEASING_VARIO",
+    "metadata": {
+        "source": "WEBSITE_SIXT_NEUWAGEN_DE",
+        "processId": "processId"
+    },
+    "contactPayload": {
+        "address": {
+            "city": "Petersborough",
+            "country": "DE",
+            "houseNumber": "123",
+            "street": "Parker street 123",
+            "zipCode": "10234"
+        },
+        "firstName": "Peter",
+        "lastName": "Parker",
+        "email": "foo@example.org",
+        "primaryPhoneNumber": "055592837",
+        "salutation": "MALE",
+        "type": "PRIVATE"
+    },
+    "productPayload": {
+        "creditorData": {
+            "id": 1,
+            "name": "LeiLA",
+            "dealerGroupId": 4,
+            "creditorType": "DEALER"
+        },
+        "delivery": {
+            "id": "DEALER_PICKUP",
+            "name": "Händlerabholung",
+            "type": "DEALER_PICKUP",
+            "address": {
+                "city": "Test",
+                "country": "DE",
+                "region": "SN",
+                "street": "Teststraße",
+                "houseNumber": "7",
+                "zipCode": "70707"
+            }
+        },
+        "process": {
+            "contractMileage": 10000,
+            "contractTerm": 48,
+            "contractType": "VARIO",
+            "contractAttributes": [],
+            "tiers": {
+                "mandator": {
+                    "id": 1,
+                    "created": "1970-01-01T00:00:00Z",
