@@ -269,10 +269,12 @@ function rh() {
     curl -s -D - "$1" -o /dev/null
 }
 
+# Same as below but with less info
 function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
 }
 
+# Break down of timings for one request
 function curl_time() {
     curl -w "\
    namelookup:  %{time_namelookup}s\n\
@@ -305,18 +307,16 @@ function run_dockerfile() {
 }
 
 # sixt
-alias sprs="open https://bitbucket.org/online-retail/web-newcar/pull-requests/"
-
 function dlogs() {
-  docker-compose -f /Users/jfd/Dev/sixt/orit.bp.local-docker-environments/docker-compose-cts.yml logs -t --tail=1000 -f $1
+  docker-compose -f /Users/jfd/Dev/sixt/orit.bp.local-docker-environments/docker-compose.yml logs -t --tail=1000 -f $1
 }
 
 function drestart() {
-  docker-compose -f /Users/jfd/Dev/sixt/orit.bp.local-docker-environments/docker-compose-cts.yml restart
+  docker-compose -f /Users/jfd/Dev/sixt/orit.bp.local-docker-environments/docker-compose.yml restart website-dev
 }
 
 function dps() {
-  docker-compose -f /Users/jfd/Dev/sixt/orit.bp.local-docker-environments/docker-compose-cts.yml ps
+  docker-compose -f /Users/jfd/Dev/sixt/orit.bp.local-docker-environments/docker-compose.yml ps
 }
 
 function sindex() {
