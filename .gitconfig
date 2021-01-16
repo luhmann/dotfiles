@@ -8,10 +8,6 @@
 	helper = osxkeychain
 
 [alias]
-	# checkout branch, creating it if necessary
-	go = checkout -B
-	# commit all changes
-	ca = !git add -A && git commit -av
 	# credit an author on the latest commit
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
 	# diff: `git di $number` shows the diff between the state `$number` revisions ago and the current state
@@ -24,8 +20,6 @@
 	tags = tag -l
 	branches = branch -a
 	remotes = remote -v
-	# Interactive rebase with the given number of latest commits
-	reb = "!r() { git rebase -i HEAD~$1; }; r"
 
 [apply]
 	# detect whitespace errors when applying a patch
@@ -63,6 +57,10 @@
 	remote = origin
 	merge = refs/heads/master
 
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+
 [remote "origin"]
 	push = HEAD
 
@@ -89,57 +87,5 @@
 	prompt = false
 [diff]
     tool = Kaleidoscope
-
-[includeIf "gitdir:dev/sixt/"]
-  path = /Users/jfd/dev/sixt/.gitconfig
 [pull]
 	rebase = false
-    "product": "LEASING_VARIO",
-    "metadata": {
-        "source": "WEBSITE_SIXT_NEUWAGEN_DE",
-        "processId": "processId"
-    },
-    "contactPayload": {
-        "address": {
-            "city": "Petersborough",
-            "country": "DE",
-            "houseNumber": "123",
-            "street": "Parker street 123",
-            "zipCode": "10234"
-        },
-        "firstName": "Peter",
-        "lastName": "Parker",
-        "email": "foo@example.org",
-        "primaryPhoneNumber": "055592837",
-        "salutation": "MALE",
-        "type": "PRIVATE"
-    },
-    "productPayload": {
-        "creditorData": {
-            "id": 1,
-            "name": "LeiLA",
-            "dealerGroupId": 4,
-            "creditorType": "DEALER"
-        },
-        "delivery": {
-            "id": "DEALER_PICKUP",
-            "name": "Händlerabholung",
-            "type": "DEALER_PICKUP",
-            "address": {
-                "city": "Test",
-                "country": "DE",
-                "region": "SN",
-                "street": "Teststraße",
-                "houseNumber": "7",
-                "zipCode": "70707"
-            }
-        },
-        "process": {
-            "contractMileage": 10000,
-            "contractTerm": 48,
-            "contractType": "VARIO",
-            "contractAttributes": [],
-            "tiers": {
-                "mandator": {
-                    "id": 1,
-                    "created": "1970-01-01T00:00:00Z",

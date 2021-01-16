@@ -22,6 +22,6 @@ rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 # create dev-folder
 mkdir ~/dev
 
-# clone my dotfiles and run install 
+# clone my dotfiles and run install
 git clone git@github.com:luhmann/dotfiles.git ~/dev/dotfiles
 cd ~/dev/dotfiles && bash install.bash

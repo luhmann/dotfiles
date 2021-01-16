@@ -18,12 +18,6 @@ function setItermPreferences() {
   defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 }
 
-# check if this is still required, there was talk about a dotfile that could configure this
-function installAsdfPlugins() {
-  asdf plugin-add nodejs
-  asdf plugin-add java
-}
-
 function setupHammerspoon() {
   # open -a Hammerspoon - open hammerspoon if menu-item and dock-item are disabled
   # cmd + , -- open preferences
@@ -34,5 +28,4 @@ function setupHammerspoon() {
 
 installFonts
 setItermPreferences
-installAsdfPlugins
 setupHammerspoon

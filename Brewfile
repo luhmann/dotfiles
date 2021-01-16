@@ -19,8 +19,6 @@ brew "libyaml"
 brew "openssl"
 # Library for command-line editing
 brew "readline"
-# Extendable version manager with support for Ruby, Node.js, Erlang & more
-brew "asdf"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # GNU database manager
@@ -43,6 +41,7 @@ brew "diff-so-fancy"
 brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+brew "fnm"
 # High quality MPEG Audio Layer III (MP3) encoder
 brew "lame"
 # H.264/AVC encoder
@@ -77,7 +76,7 @@ brew "libksba"
 brew "gnupg"
 # GNU grep, egrep and fgrep
 brew "grep"
-brew "hub"
+brew "gh"
 # Improved top (interactive process viewer)
 brew "htop"
 # Display an interface's bandwidth usage
@@ -88,12 +87,8 @@ brew "imagemagick"
 brew "iozone"
 # Mac App Store command-line interface
 brew "mas"
-# Java-based project management
-brew "maven"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
-# High-performance, schema-free, document-oriented database
-brew "mongodb"
 # NCurses Disk Usage
 brew "ncdu"
 # Network grep
@@ -102,16 +97,10 @@ brew "ngrep"
 brew "nmap"
 # Manage compile and link flags for libraries
 brew "pkg-config"
-# Object-relational database system
-brew "postgresql", restart_service: true
 # Wrapper to colorize and simplify ping's output
 brew "prettyping"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
-# Rootkit hunter
-brew "rkhunter"
-# Powerful, clean, object-oriented scripting language
-brew "ruby", link: true
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
 # TCP flow recorder
@@ -139,10 +128,6 @@ brew "zlib"
 brew "zplug"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Todolist app
-brew "ultralist"
-# A command line tool to identify unused code.
-brew "joshuaclayton/formulae/unused"
 # A command-line tool for working with Architecture Decision Records (ADRs).
 brew "olleolleolle/adr-tools/adr_tools"
 cask "alfred"
@@ -153,44 +138,24 @@ cask "firefox"
 cask "google-chrome-canary"
 cask "hammerspoon"
 cask "iina"
-cask "insomnia"
 cask "istat-menus"
 cask "iterm2"
 cask "kaleidoscope"
 cask "macvim"
 cask "numi"
 cask "odrive"
-cask "onyx"
-cask "opera"
 cask "runjs"
 cask "safari-technology-preview"
 cask "sequel-pro"
-cask "sketch"
-cask "slack"
 cask "spotify"
-cask "sublime-text"
 cask "the-unarchiver"
-cask "tower"
 cask "tunnelblick"
-cask "versions"
 cask "visual-studio-code"
 cask "vlc"
 mas "Bear", id: 1091189122
-mas "DaisyDisk", id: 411643860
-mas "Disk Diag", id: 672206759
 mas "Glyphs Mini", id: 469036911
-mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
-mas "Navicat Essentials for PostgreSQL", id: 466725643
 mas "Noizio", id: 928871589
-mas "Numbers", id: 409203825
-mas "OmniGraffle", id: 711830901
-mas "Pages", id: 409201541
-mas "Patterns", id: 429449079
-mas "Sip", id: 507257563
-mas "SnippetsLab", id: 1006087419
 mas "Spark", id: 1176895641
-mas "SubEthaEdit", id: 728530824
 mas "Vicinity", id: 1143779658
-mas "Wunderlist", id: 410628904
 mas "xScope", id: 889428659
