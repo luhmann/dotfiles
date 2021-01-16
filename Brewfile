@@ -3,7 +3,6 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "joshuaclayton/formulae"
 tap "olleolleolle/adr-tools"
 # Automatic configure script builder
 brew "autoconf"
@@ -56,8 +55,6 @@ brew "node"
 brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# The GNU Compiler Collection
-brew "gcc@4.9"
 # GIF image/animation creator/editor
 brew "gifsicle"
 # Command-line utility for uploading Gists
