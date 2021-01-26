@@ -1,9 +1,5 @@
 source $ZPLUG_HOME/init.zsh
 
-# adds commands for starting sublime for cli
-# see: https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sublime
-zplug "plugins/sublime", from:oh-my-zsh
-
 # adds git aliases
 # currently disabled custom-ones work better
 # zplug "plugins/gitfast", from:oh-my-zsh
@@ -26,9 +22,6 @@ zplug "denolfe/zsh-travis"
 # adds some good defaults for history recording
 zplug "modules/history", from:prezto
 
-# adds the "gitit"-commands to jump to github-repo from cli - replaced for now by "hub"
-# zplug "peterhurford/git-it-on.zsh", from:github
-
 # adds interactive tools (adding, ignoring...) for git
 zplug 'wfxr/forgit', defer:1
 
@@ -44,11 +37,8 @@ zplug "zdharma/fast-syntax-highlighting"
 # type a command from history and cycle through matches with up/down
 zplug "zsh-users/zsh-history-substring-search"
 
-# an enhanced cd command - never used it, interferes with fzf
-# zplug "b4b4r07/enhancd", use:init.sh
-
-# command-line theme
-zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+# zsh-theme
+zplug "romkatv/powerlevel10k", as:theme, depth:1
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
