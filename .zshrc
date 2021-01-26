@@ -1,3 +1,5 @@
+# old path before homebrew refactored a lot
+# export ZPLUG_HOME=/usr/local/opt/zplug
 export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source ~/.zplug
 
