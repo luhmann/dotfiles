@@ -15,11 +15,13 @@
 	# pull including all submodules
 	ppl = !"git pull; git submodule foreach git pull origin master"
 	# undo push
-	undopush = push -f origin HEAD^:master
+	undopush = push --force-with-lease origin HEAD^:master
 	# show verbose output about tags, branches or remotes
 	tags = tag -l
 	branches = branch -a
 	remotes = remote -v
+  # Alias the preferred operation for force push to not use regular force accidentally
+  force-push-with-lease = push --force-with-lease
 
 [apply]
 	# detect whitespace errors when applying a patch
@@ -71,8 +73,8 @@
 # 	proxy = http://proxy.example.org:8080
 
 [pager]
-    diff = diff-so-fancy | less --tabs=1,5 -RFX
-    show = diff-so-fancy | less --tabs=1,5 -RFX
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
 
 [push]
 	default = simple
@@ -86,6 +88,6 @@
 [mergetool]
 	prompt = false
 [diff]
-    tool = Kaleidoscope
+  tool = Kaleidoscope
 [pull]
 	rebase = false

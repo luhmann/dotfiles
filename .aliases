@@ -95,7 +95,12 @@ bip() {
   fi
 }
 
+function load_asdf() {
+  . /usr/local/opt/asdf/asdf.sh
+}
+
 # git shortcuts
+alias g='git'
 alias ga='git add --all .'
 alias gc='git commit'
 alias gco='git checkout'
@@ -179,7 +184,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # delete entries containing string from history
 histrm() {
-    gsed -i "/$1/d" $HISTFILE
+  gsed -i "/$1/d" $HISTFILE
 }
 
 # encoding /decoding
