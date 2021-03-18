@@ -22,6 +22,7 @@
 	remotes = remote -v
   # Alias the preferred operation for force push to not use regular force accidentally
   force-push-with-lease = push --force-with-lease
+  stash-unstaged = stash -k -u
 
 [apply]
 	# detect whitespace errors when applying a patch
