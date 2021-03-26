@@ -96,7 +96,7 @@ bip() {
 }
 
 function load_asdf() {
-  . /usr/local/opt/asdf/asdf.sh
+  . $(brew --prefix asdf)/asdf.sh
 }
 
 # git shortcuts
