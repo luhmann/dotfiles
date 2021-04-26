@@ -109,6 +109,7 @@ alias gp='git remote prune origin'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gs='git status -sb'
 alias gurl='git config --get remote.origin.url'
+alias gclean='git branch | grep -v "master\|main" | xargs git branch -D'
 
 ## jump to project in travis
 alias trav='git-trav'
