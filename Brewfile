@@ -2,9 +2,11 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+tap "tbuo/cask-upgrade"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "olleolleolle/adr-tools"
+
 # GNU database manager
 brew "gdbm"
 # Library for command-line editing
