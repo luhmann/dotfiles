@@ -52,7 +52,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status node_version custom_wifi_signal)
 source ~/.aliases
 
 # Put local node_modules/.bin in path
-# export PATH="$PATH:./node_modules/.bin"
+export PATH="$PATH:./node_modules/.bin"
 
 # enable fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
