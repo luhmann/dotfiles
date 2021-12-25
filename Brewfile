@@ -38,6 +38,7 @@ brew "boost"
 brew "diff-so-fancy"
 # Modern replacement for 'ls'
 brew "exa"
+brew "fasd"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 brew "fnm"
@@ -122,7 +123,6 @@ brew "youtube-dl"
 # General-purpose lossless data-compression library
 brew "zlib"
 # The next-generation plugin manager for zsh
-brew "zplug"
 # UNIX shell (command interpreter)
 brew "zsh"
 # A command-line tool for working with Architecture Decision Records (ADRs).

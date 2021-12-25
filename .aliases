@@ -276,3 +276,9 @@ function img-data() {
   ENC=$(base64 $1)
   echo "data:$TYPE;base64,$ENC"
 }
+
+# time zsh startup time
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
