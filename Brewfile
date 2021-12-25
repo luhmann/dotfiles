@@ -1,7 +1,8 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/cask"
+tap "buo/cask-upgrade"
+tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "olleolleolle/adr-tools"
 # Automatic configure script builder
@@ -125,8 +126,6 @@ brew "zlib"
 # The next-generation plugin manager for zsh
 # UNIX shell (command interpreter)
 brew "zsh"
-# A command-line tool for working with Architecture Decision Records (ADRs).
-brew "olleolleolle/adr-tools/adr_tools"
 cask "alfred"
 cask "arq"
 cask "charles"
