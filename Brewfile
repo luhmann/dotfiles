@@ -177,6 +177,8 @@ brew "yq"
 brew "zlib"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
 
 # A command-line tool for working with Architecture Decision Records (ADRs).
 brew "olleolleolle/adr-tools/adr_tools"
