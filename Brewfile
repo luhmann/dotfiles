@@ -196,6 +196,7 @@ cask "font-source-code-pro"
 cask "font-inconsolata-g"
 cask "font-input"
 cask "font-roboto-mono-for-powerline"
+cask "font-meslo-lg-nerd-font"
 # Web browser
 cask "google-chrome-canary"
 # Set of tools to manage resources and applications hosted on Google Cloud
