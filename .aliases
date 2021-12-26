@@ -19,7 +19,7 @@ alias oo='open .'
 alias pubkey="more ~/.ssh/id_ed25519.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 alias v='vim'
 alias sudo='sudo '
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew cu; zinit update;'
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 alias vimup='vim +PlugUpgrade +PlugUpdate +qa!'
 alias exclude='vim .git/info/exclude'

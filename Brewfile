@@ -39,8 +39,6 @@ brew "libyaml"
 brew "asdf"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
-# Shell extension to jump to frequently used directories
-brew "autojump"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
