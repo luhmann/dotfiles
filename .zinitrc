@@ -14,7 +14,6 @@ zinit snippet OMZP::git-extras
 zinit snippet PZT::modules/history
 
 zinit light zsh-users/zsh-completions
-zinit light kovetskiy/zsh-add-params
 
 # enable completions
 zpcompinit; zpcdreplay
