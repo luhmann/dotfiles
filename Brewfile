@@ -1,12 +1,11 @@
+tap "buo/cask-upgrade"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "buo/cask-upgrade"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "olleolleolle/adr-tools"
-
 # GNU database manager
 brew "gdbm"
 # Library for command-line editing
@@ -37,8 +36,6 @@ brew "libtool"
 brew "libyaml"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -47,6 +44,8 @@ brew "bash"
 brew "bat"
 # Collection of portable C++ source libraries
 brew "boost"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
 # Enables you to reproduce the CircleCI environment locally
 brew "circleci"
 # Cross-platform make
@@ -141,6 +140,8 @@ brew "pdf2svg"
 brew "plantuml"
 # Wrapper to colorize and simplify ping's output
 brew "prettyping"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
 # Add a public key to a remote machine's authorized_keys file
@@ -175,26 +176,29 @@ brew "yq"
 brew "zlib"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Manage your dotfiles across multiple diverse machines, securely
-brew "chezmoi"
-
 # A command-line tool for working with Architecture Decision Records (ADRs).
 brew "olleolleolle/adr-tools/adr_tools"
 # GraphQL client
 cask "altair-graphql-client"
+# Multi-cloud backup application
+cask "arq"
 # Web debugging Proxy application
 cask "charles"
+# Screen capturing tool
+cask "cleanshot"
 # API documentation browser and code snippet manager
 cask "dash"
 # Text editor
 cask "emacs"
 # Web browser
 cask "firefox"
-cask "font-source-code-pro"
 cask "font-inconsolata-g"
 cask "font-input"
-cask "font-roboto-mono-for-powerline"
 cask "font-meslo-lg-nerd-font"
+cask "font-roboto-mono-for-powerline"
+cask "font-source-code-pro"
+# Web browser
+cask "google-chrome"
 # Web browser
 cask "google-chrome-canary"
 # Set of tools to manage resources and applications hosted on Google Cloud
@@ -205,17 +209,21 @@ cask "hammerspoon"
 cask "iina"
 # HTTP and GraphQL Client
 cask "insomnia"
+# System monitoring app
+cask "istat-menus"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Spot and merge differences in text and image files or folders
 cask "kaleidoscope"
 # Calculator and converter application
 cask "numi"
 # Tool to make any cloud storage unified, synchronized, shareable, and encrypted
 cask "odrive"
-# Modern and intuitive HTTP Debugging Proxy app
-cask "proxyman"
 # Collaboration platform for API development
 cask "postman"
-# Alfred replacement
+# Modern and intuitive HTTP Debugging Proxy app
+cask "proxyman"
+# Control your tools with a few keystrokes
 cask "raycast"
 # JavaScript playground that auto-evaluates as code is typed
 cask "runjs"
@@ -223,19 +231,24 @@ cask "runjs"
 cask "safari-technology-preview"
 # MySQL/MariaDB database management platform
 cask "sequel-pro"
+# Team communication and collaboration software
+cask "slack"
 # Music streaming service
 cask "spotify"
+# Native GUI tool for relational databases
+cask "tableplus"
 # Unpacks archive files
 cask "the-unarchiver"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
 # Open-source code editor
 cask "visual-studio-code"
+# Code editor
+cask "visual-studio-code-insiders"
 # Multimedia player
 cask "vlc"
 # Video communication and virtual meeting platform
 cask "zoom"
-
 mas "Bear", id: 1091189122
 mas "Darkroom", id: 953286746
 mas "Evernote Web Clipper", id: 1481669779
