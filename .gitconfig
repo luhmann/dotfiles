@@ -92,3 +92,5 @@
   tool = Kaleidoscope
 [pull]
 	rebase = false
+[fetch]
+  prune = true
