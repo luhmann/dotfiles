@@ -4,8 +4,10 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+  fi
 fi
 
 
@@ -62,7 +64,14 @@ if [ -f '/Users/jfd/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jfd/google-
 if [ -f '/Users/jfd/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jfd/google-cloud-sdk/completion.zsh.inc'; fi
 
 # powerlevel 10k: To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+fi
+
+# activate starship (instead of p10k) for better compability with warp.dev
+if [[ $TERM_PROGRAM == "WarpTerminal" ]]; then
+  eval "$(starship init zsh)"
+fi
 
 # source env variables from a local file if it exists
 [ -f ~/.local_env ] && source ~/.local_env

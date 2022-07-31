@@ -178,6 +178,8 @@ brew "zlib"
 brew "zsh"
 # A command-line tool for working with Architecture Decision Records (ADRs).
 brew "olleolleolle/adr-tools/adr_tools"
+# Prompt framework for usage in warp.dev
+brew "starship"
 # GraphQL client
 cask "altair-graphql-client"
 # Multi-cloud backup application
