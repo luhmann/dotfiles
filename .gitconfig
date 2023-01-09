@@ -3,6 +3,7 @@
 [user]
 	email = luhmann@users.noreply.github.com
 	name = Jan Florian Dietrich
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ+WCtF9rB+ZYclQ9nDilbhhGYtmPbmUJxws2vzMxXHO
 
 [credential]
 	helper = osxkeychain
@@ -94,3 +95,7 @@
 	rebase = false
 [fetch]
   prune = true
+[commit]
+  gpgsign = true
+[gpg]
+  format = ssh
