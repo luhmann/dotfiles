@@ -203,6 +203,7 @@ cask "font-source-code-pro"
 cask "google-chrome"
 # Web browser
 cask "google-chrome-canary"
+cask "finicky"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
 # Desktop automation application
