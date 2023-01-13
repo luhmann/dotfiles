@@ -8,6 +8,14 @@ module.exports = {
       browser: "Google Chrome",
     },
     {
+      match: /^https?:\/\/app\.circleci\.com\/.*$/,
+      browser: "Google Chrome",
+    },
+    {
+      match: /^https?:\/\/around\.co\/.*$/,
+      browser: "Google Chrome",
+    },
+    {
       match: ({ opener }) => opener.bundleId === "com.tinyspeck.slackmacgap",
       browser: "Google Chrome",
     },
