@@ -73,6 +73,9 @@ if [[ $TERM_PROGRAM == "WarpTerminal" ]]; then
   eval "$(starship init zsh)"
 fi
 
+# enable postgresql-tools
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
 # source env variables from a local file if it exists
 [ -f ~/.local_env ] && source ~/.local_env
 
