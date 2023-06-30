@@ -64,14 +64,9 @@ if [ -f '/Users/jfd/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jfd/google-
 if [ -f '/Users/jfd/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jfd/google-cloud-sdk/completion.zsh.inc'; fi
 
 # powerlevel 10k: To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
-  [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-fi
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# activate starship (instead of p10k) for better compability with warp.dev
-if [[ $TERM_PROGRAM == "WarpTerminal" ]]; then
-  eval "$(starship init zsh)"
-fi
+eval "$(/opt/homebrew/bin/rtx activate zsh)"
 
 # enable postgresql-tools
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
