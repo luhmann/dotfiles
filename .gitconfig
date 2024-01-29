@@ -24,6 +24,7 @@
   # Alias the preferred operation for force push to not use regular force accidentally
   force-push-with-lease = push --force-with-lease
   stash-unstaged = stash -k -u
+  reset-origin = !"git fetch origin; git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)"
 
 [apply]
 	# detect whitespace errors when applying a patch

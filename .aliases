@@ -160,7 +160,7 @@ function gitstashapply() {
 
 # remap of native tools for better experience
 alias cat='bat'
-alias ll='exa -lag'
+alias ll='eza -lag'
 alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
 # commented because it breaks other tools that use find
 # alias find='fd'
