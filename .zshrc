@@ -71,6 +71,9 @@ eval "$(/opt/homebrew/bin/mise activate zsh)"
 # enable postgresql-tools
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
+# doom-emacs tools
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
 # source env variables from a local file if it exists
 [ -f ~/.local_env ] && source ~/.local_env
 
