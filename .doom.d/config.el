@@ -38,13 +38,15 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
+(setq doom-font (font-spec :family "MonoLisa" :size 13))
 (setq-default line-spacing 3)
 
 (setq org-src-fontify-natively t)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq org-directory "~/Documents/org/")
+(setq org-roam-directory (file-truename "~/Documents/org-roam"))
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
@@ -90,8 +92,9 @@
 (after! org
   (org-babel-do-load-languages
    'org-babel-load-languages
-   '((js . t))))
-
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((typescript . t)))
+   '((js . t)
+     (ts .t)
+     (typescript . t)
+     (python . t)
+     (shell . t)
+     )))
