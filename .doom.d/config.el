@@ -32,7 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-outrun-electric)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -79,16 +79,15 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-(after! org
-  (require 'org-tempo))
-
 (setenv "PATH" (concat "/opt/homebrew/bin/node:" (getenv "PATH")))
 (setq exec-path (append exec-path '("/opt/homebrew/bin/node")))
 
-(after! org
-  (add-to-list 'org-src-lang-modes '("typescript" . typescript)))
+
+(setq org-log-done 'time)
 
 (after! org
+  (require 'org-tempo)
+  (add-to-list 'org-src-lang-modes '("typescript" . typescript))
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((js . t)
@@ -96,5 +95,6 @@
      (typescript . t)
      (python . t)
      (shell . t)
-     )))
+     ))
+)
 
