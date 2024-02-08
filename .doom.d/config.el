@@ -43,6 +43,9 @@
 
 (setq org-src-fontify-natively t)
 
+;; do not ask for confirmation on close
+(setq confirm-kill-emacs nil)
+
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Documents/org/")
