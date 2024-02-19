@@ -45,12 +45,6 @@ export FZF_DEFAULT_OPTS='--multi --reverse'
 # history setup
 export HISTIGNORE="&:ls:ll:la:l.:pwd:exit:clear:clr:[bf]g:youtube-dl"
 
-# cant remember why I never used fnm, lets try again
-eval "`fnm env --use-on-cd`"
-
-# enable nvm - disabled in favor of fnm
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
 
 # use python from homebrew
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"

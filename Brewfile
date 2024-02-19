@@ -10,6 +10,7 @@ tap "olleolleolle/adr-tools"
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
+brew "difftastic"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Toolkit for image loading and pixel buffer manipulation

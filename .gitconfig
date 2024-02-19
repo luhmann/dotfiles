@@ -23,8 +23,12 @@
 	remotes = remote -v
   # Alias the preferred operation for force push to not use regular force accidentally
   force-push-with-lease = push --force-with-lease
+  # Stash but include unstaged files
   stash-unstaged = stash -k -u
+  # reset current branch to the version on origin
   reset-origin = !"git fetch origin; git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)"
+  dft = difftool
+  dlog = "!f() { GIT_EXTERNAL_DIFF=difft git log -p --ext-diff $@; }; f"
 
 [apply]
 	# detect whitespace errors when applying a patch
@@ -53,10 +57,6 @@
 	changed = blue
 	untracked = red
 
-[merge]
-	# include summaries of merged commits in newly created merge commit messages
-	log = true
-
 # always use `origin` as the default remote on the `master` branch
 [branch "master"]
 	remote = origin
@@ -76,27 +76,38 @@
 # 	proxy = http://proxy.example.org:8080
 
 [pager]
-  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  difftool = true
   show = diff-so-fancy | less --tabs=1,5 -RFX
-
+[init]
+  defaultBranch = main
 [push]
-	default = simple
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	default = current
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
 [difftool]
 	prompt = false
 [mergetool]
 	prompt = false
 [diff]
-  tool = Kaleidoscope
+  external = difft
+  tool = difftastic
 [pull]
-	rebase = false
+	rebase = true
+[merge]
+  # use zdiff3 for conflict resolution
+  conflictstyle = zdiff3
+	# include summaries of merged commits in newly created merge commit messages
+  log = true
 [fetch]
   prune = true
+[rebase]
+  autostash = true
+  updateRefs = true
+[rerere]
+  enabled = true
 [commit]
   gpgsign = true
 [gpg]
   format = ssh
+[log]
+  date = iso
