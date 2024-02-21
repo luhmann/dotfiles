@@ -101,3 +101,12 @@
      ))
 )
 
+
+(after! org
+  (setq dgstage-notes-file (expand-file-name "notes_dgstage.org" org-directory))
+  (add-to-list 'org-capture-templates
+             '("d" "DGStage Note" entry
+               (file+headline dgstage-notes-file "DGStage")
+               "* [%<%Y-%m-%d %H:%M>] %? :dgstage:\n %i\n %a\n"
+               )
+  ))
