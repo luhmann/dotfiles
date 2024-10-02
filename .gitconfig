@@ -29,6 +29,7 @@
   reset-origin = !"git fetch origin; git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)"
   dft = difftool
   dlog = "!f() { GIT_EXTERNAL_DIFF=difft git log -p --ext-diff $@; }; f"
+  search-msg = "log --all --grep -i"
 
 [apply]
 	# detect whitespace errors when applying a patch
@@ -111,3 +112,9 @@
   format = ssh
 [log]
   date = iso
+
+[url "ssh://git@umg-github/umg/"]
+  insteadOf = git@github.com:umg/
+
+[includeIf "gitdir:~/Dev/dg"]
+  path = ~/Dev/dg/.gitconfig
