@@ -239,6 +239,10 @@ function perf {
   curl -o /dev/null -s -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
 }
 
+function docker-run-interactive {
+  docker run -it --entrypoint "" -e AWS_PROFILE=${AWS_PROFILE} -v $(pwd):/app -v ${HOME}/.aws:/root/.aws --platform=linux/amd64 "$1" sh -c "cd /app/; sh"
+}
+
 # Break down of timings for one request
 function curl_time() {
     curl -w "\
