@@ -42,28 +42,14 @@ export PATH="$PATH:./node_modules/.bin"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--multi --reverse'
 
-# history setup
-export HISTIGNORE="&:ls:ll:la:l.:pwd:exit:clear:clr:[bf]g:youtube-dl"
-
 
 # use python from homebrew
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-
-eval "$(fasd --init auto)"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jfd/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jfd/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jfd/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jfd/google-cloud-sdk/completion.zsh.inc'; fi
 
 # powerlevel 10k: To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(/opt/homebrew/bin/mise activate zsh)"
-
-# enable postgresql-tools
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # doom-emacs tools
 export PATH="$HOME/.emacs.d/bin:$PATH"
