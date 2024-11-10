@@ -76,9 +76,9 @@
 #[http]
 # 	proxy = http://proxy.example.org:8080
 
-[pager]
-  difftool = true
-  show = diff-so-fancy | less --tabs=1,5 -RFX
+; [pager]
+;   difftool = true
+;   show = diff-so-fancy | less --tabs=1,5 -RFX
 [init]
   defaultBranch = main
 [push]
@@ -89,16 +89,16 @@
 	prompt = false
 [mergetool]
 	prompt = false
-[diff]
-  external = difft
-  tool = difftastic
+; [diff]
+;   external = difft
+;   tool = difftastic
 [pull]
 	rebase = true
-[merge]
-  # use zdiff3 for conflict resolution
-  conflictstyle = zdiff3
-	# include summaries of merged commits in newly created merge commit messages
-  log = true
+; [merge]
+;   # use zdiff3 for conflict resolution
+;   conflictstyle = zdiff3
+; 	# include summaries of merged commits in newly created merge commit messages
+;   log = true
 [fetch]
   prune = true
 [rebase]
@@ -116,5 +116,10 @@
 [url "ssh://git@umg-github/umg/"]
   insteadOf = git@github.com:umg/
 
-[includeIf "gitdir:~/Dev/dg"]
-  path = ~/Dev/dg/.gitconfig
+[includeIf "gitdir:/Users/jfd/dev/dg/"]
+  path = /Users/jfd/dev/dg/.gitconfig
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
