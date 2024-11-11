@@ -51,8 +51,13 @@ export FZF_DEFAULT_OPTS='--multi --reverse'
 
 eval "$(/opt/homebrew/bin/mise activate zsh)"
 
+export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
+
 # doom-emacs tools
 export PATH="$HOME/.emacs.d/bin:$PATH"
+
+# activate zoxide
+eval "$(zoxide init zsh)"
 
 # source env variables from a local file if it exists
 [ -f ~/.local_env ] && source ~/.local_env
