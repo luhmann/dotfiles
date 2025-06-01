@@ -23,3 +23,5 @@ node_modules/
 npm-debug.log
 
 .local_env
+
+docs/agent

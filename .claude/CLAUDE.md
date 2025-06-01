@@ -2,18 +2,23 @@
 
 -   Avoid installing extra dependencies wherever possible, the net goal for dependencies is zero
 -   Always run relevant tests after you made changes. If you cannot find tests ask to create them.
+-   Before implementing anything present a detailed, step-by-step implementaton plan to me
+-   If you are not very sure about an approach offer me several options, each with a confidence on 1 to 10-scale
+-   Always backup factual claims with sources
+-   Ask me questions if you are not sure about requirements or what best to do
+-   Always run tests you have edited before
 
 ## Code Style
 
--   The most important goals are simplicity, maintainability, readability and elegance
+-   The most important goals are elegance, simplicity, maintainability and readability
 -   Prefer functional programming patterns
 -   Do not use excessive comments, only add comments for information that is surprising or unintuitive
--   If type definitions are available in the active programming language use them
--   Use pattern matching where available through already installed libraries or the language itself
--   Adhere to Data Oriented Programming Principles where possible:
-    -   Separate Data and Behavior. Data should be simple typed representations of entity. Pure functions should work on it without needing context
-    -   Treat data as immutable where possible
-    -   Make illegal states unrepresentable, eg through the type system
+-   If the environment supports types, use them
+-   Use pattern matching if available
+-   Separate Data and Behavior. Data should be simple typed representations of an entity. Use simple records or typed structs.
+-   Treat data as immutable where possible
+-   Make illegal states unrepresentable, eg through the type system
+-   Implement behaviour/logic as a pipeline of small functions that operate on data
 
 ## Documentation
 
