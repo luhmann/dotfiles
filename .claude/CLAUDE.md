@@ -20,6 +20,11 @@
 -   Make illegal states unrepresentable, eg through the type system
 -   Implement behaviour/logic as a pipeline of small functions that operate on data
 
+## Tests
+
+-   Use unit tests for core business logic and pure functions. Test them extensively
+-   Ascertain general functionality with integration tests. Try to only mock on the level of the network/API responses to instrument as much of the actual implementation as possible
+
 ## Documentation
 
 -   After implementing a larger change that might have affected API-Surface, check if the `README` needs updating
@@ -28,3 +33,8 @@
     -   In this file summarize the work done in a way that is useful to future LLMS and human reviewers
     -   Put special emphasis on documenting the "Why?" of the changes not the "How?"
     -   Where useful prompt the user about additional information that you might want to include
+-   Additionally chunk our conversation into small chunks and store it in Chroma for future reference. Add a tag in metadata like this `project: <current git repository name>`
+
+## Memory
+
+-   Remember, you have access to Chroma tools. All memories for the current project are tagged with `project: <current git repository name>` in metadata. At any point if the user references previous chats or memory, check chroma for similar conversations. Only refer to Try to use retrieved information where possible.
