@@ -106,7 +106,7 @@
   updateRefs = true
 [rerere]
   enabled = true
-[commit]
+# [commit]
   # gpgsign = true
 [gpg]
   format = ssh
@@ -116,7 +116,7 @@
 [url "ssh://git@umg-github/umg/"]
   insteadOf = git@github.com:umg/
 
-[includeIf "gitdir:/Users/jfd/dev/dg/"]
+[includeIf "gitdir:/Users/jfd/dev/dg/*"]
   path = /Users/jfd/dev/dg/.gitconfig
 [filter "lfs"]
 	clean = git-lfs clean -- %f
